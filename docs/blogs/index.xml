@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Guilhermo Barretti</title>
-    <link>https://example.org/</link>
-    <description>Recent content on Guilhermo Barretti</description>
+    <title>Blogs on Guilhermo Barretti</title>
+    <link>https://example.org/blogs/</link>
+    <description>Recent content in Blogs on Guilhermo Barretti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Dec 2022 19:53:33 +0530</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Render Math With Mathjax</title>
       <link>https://example.org/blogs/math/</link>
       <pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
       <guid>https://example.org/blogs/math/</guid>
       <description>Mathjax Math equations can be rendered using Mathjax syntax with AMS symbol support.&#xA;Optionally enable this on a per-page basis by adding mathjax: true to your frontmatter.&#xA;Then, use $$ ... $$ on a line by itself to render a block equation:&#xA;$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow P_{2}} [A(x) = 1] | &amp;lt; \text{negligible} $$&#xA;The raw version is:&#xA;$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow P_{2}} [A(x) = 1] | &amp;lt; \text{negligible} $$ Write in-line equations with \\( .</description>
-    </item>
-    <item>
-      <title>Image Gallery</title>
-      <link>https://example.org/gallery/</link>
-      <pubDate>Sat, 25 Jun 2022 18:35:46 +0530</pubDate>
-      <guid>https://example.org/gallery/</guid>
-      <description></description>
     </item>
     <item>
       <title>Markdown Syntax</title>

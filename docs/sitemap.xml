@@ -2,10 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://example.org/blogs/</loc>
+    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/example/</loc>
+    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
     <loc>https://example.org/</loc>
+    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/markdown-syntax/</loc>
+    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/mathjax/</loc>
+    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/blogs/math/</loc>
+    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
     <loc>https://example.org/tags/</loc>
+    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/gallery/</loc>
+    <lastmod>2022-06-25T18:35:46+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/blogs/markdown-syntax/</loc>
+    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/sample/</loc>
+    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/emoji-support/</loc>
+    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/blogs/emoji-support/</loc>
+    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/placeholder-text/</loc>
+    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/blogs/placeholder-text/</loc>
+    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/rich-content/</loc>
+    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/blogs/rich-content/</loc>
+    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/categories/</loc>
   </url>
 </urlset>
