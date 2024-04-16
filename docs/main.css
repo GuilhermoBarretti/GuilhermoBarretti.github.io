@@ -1045,6 +1045,8 @@ body:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(250 250 249 / var(--tw-text-opacity));
 }
+body { background-color: black;
+  }
 html {
     touch-action: manipulation;
     scroll-behavior: smooth;

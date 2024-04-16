@@ -43,6 +43,18 @@ params:
       - icon: fab fa-instagram
         url: "https://instagram.com/guilhermobarretti"
         title: Instagram
+      - icon: fab fa-medium
+        url: "https://guiks.medium.com/"
+        title: Medium
+      - icon: fab fa-bsky
+        url: "https://bsky.app/profile/guilhermo.bsky.social"
+        title: BlueSky
+      - icon: fab fa-threads
+        url: "http://threads.net/@guilhermobarretti"
+        title: Threads
+      - icon: fab fa-mastodon
+        url: "https://mastodon.gamedev.place/@guilhermo"
+        title: Mastodon
       - icon: fab fa-linkedin-in
         url: "https://www.linkedin.com/in/guilhermo-barretti-304999236/"
         title: LinkedIn
