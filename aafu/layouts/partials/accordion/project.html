@@ -1,7 +1,7 @@
 {{ range.Site.Params.project.list }}
 <div class="containerProject" style="display: flex; align-items: center; justify-content: center;">
 	<div class="imageProject" style="float: left">
-		<img src="{{ `images` | relURL }}/{{ .imageIcon }}" style="max-width: 70px"/>
+		<img src="{{ `images` | relURL }}/{{ .imageIcon }}" style="max-width: 70px; border-radius: 15%;"/>
 	</div>
 	<div class="textProject" style="float: right; padding-left: 20px; padding-top: 10px;">
 		<h4>

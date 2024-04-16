@@ -131,7 +131,8 @@ params:
   #       type: Proceedings
   project:
     title: Games
-    icon: fas fa-project-diagram
+    icon: fas fa-gamepad
+    # icon: fas fa-project-diagram
     list:
       - title: Granola Jumps
         url: "https://guiks.itch.io/granola-jumps"
