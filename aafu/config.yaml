@@ -48,12 +48,12 @@ params:
         title: LinkedIn
   showInAccordion:
     - item: aboutme
-      expand: true
-    # - item: experience
-    - item: education
-    # - item: publication
     - item: project
+      expand: true
+    - item: education
     - item: skill
+    # - item: experience
+    # - item: publication
     # - item: hobby
   aboutme:
     title: About Me
