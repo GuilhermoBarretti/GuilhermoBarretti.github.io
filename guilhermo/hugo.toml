@@ -1,5 +1,0 @@
-baseURL = 'https://guilhermo.games/'
-languageCode = 'en-us'
-title = 'Guilhermo Barretti'
-theme = 'profile'
-publishDir = '../docs/'
