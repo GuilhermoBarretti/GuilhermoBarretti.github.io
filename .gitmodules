@@ -1,6 +1,3 @@
 [submodule "guilhermo/themes/profile"]
 	path = guilhermo/themes/profile
 	url = https://github.com/gurusabarish/hugo-profile.git
-[submodule "aafu/themes/aafu"]
-	path = aafu/themes/aafu
-	url = https://github.com/darshanbaral/aafu.git

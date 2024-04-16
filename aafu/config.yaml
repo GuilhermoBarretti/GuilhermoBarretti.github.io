@@ -1,0 +1,165 @@
+baseURL: https://guilhermo.games/
+languageCode: en-us
+publishDir: ../docs/
+build:
+  writeStats: true
+params:
+  title: aafu theme
+  author: Darshan Baral
+  description: Website title
+  # copyright: >-
+  #   powered by [hugo](https://gohugo.io/) & deployed on
+  #   [Cloudflare](https://www.cloudflare.com/)
+  theme:
+    mainTheme: dark
+    showAttribute: true
+    singlePage: false
+  favicons:
+    use: true
+    metas: |2-
+              <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+              <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+              <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+              <link rel="manifest" href="site.webmanifest">
+              <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+              <link rel="shortcut icon" href="favicon.ico">
+
+  profile:
+    name: "Guilhermo Barretti"
+    # tagline: Game Developer
+    # location: "São José dos Campos, SP"
+    photo: profile.jpg
+  social:
+    title: Links
+    list:
+      - icon: fab fa-github
+        url: "https://github.com/GuilhermoBarretti"
+        title: GitHub
+      - icon: fab fa-twitter
+        url: "https://twitter.com/guilhermodsb"
+        title: Twitter
+      - icon: fab fa-itch-io
+        url: "https://guiks.itch.io/"
+        title: Itch.io
+      - icon: fab fa-instagram
+        url: "https://instagram.com/guilhermobarretti"
+        title: Instagram
+      - icon: fab fa-linkedin-in
+        url: "https://www.linkedin.com/in/guilhermo-barretti-304999236/"
+        title: LinkedIn
+  showInAccordion:
+    - item: aboutme
+      expand: true
+    # - item: experience
+    - item: education
+    # - item: publication
+    - item: project
+    - item: skill
+    # - item: hobby
+  aboutme:
+    title: About Me
+    icon: fas fa-user
+    description: "Hello, my name is **Guilhermo Barretti** and I'm a **Game Developer**. I have two mobile games released using **Unity** made by myself. I'm also making a **custom engine** using **C++**, **SDL**, **OpenGL** and **Lua**."
+  # experience:
+  #   title: Experiences
+  #   icon: fas fa-briefcase
+  #   list:
+  #     - position: Job Title
+  #       dates: 2019 - *Present*
+  #       company: Company Name
+  #       details: |1-
+  #         - Printed from desktop. Sent [emails](#).
+  #             - Called people *using* telephone.
+  #         - Drank water from office cooler.
+  #         - Ate donuts on people's birthdays.
+  #     - position: Job Title
+  #       dates: 2018 - 2019
+  #       url: "#"
+  #       company: Company Name
+  education:
+    title: Education
+    icon: fas fa-graduation-cap
+    list:
+      - degree: Computer Science
+        college: Universidade Federal de São Carlos
+        dates: 2012 - 2016 [Incomplete]
+        # thesis_title: "Effect of humans on other humans: a study of human behavior."
+        # thesis_url: "#"
+      - degree: Computer Science
+        college: Universidade Anhembi Morumbi
+        dates: 2020 - present
+        # thesis_title: "Effect of humans on other humans: a study of human behavior."
+        # thesis_url: "#"
+      # - degree: B.S. in Subject
+      #   college: University of State-City
+      #   dates: 2004 - 2009
+  # publication:
+  #   title: Publications
+  #   icon: fas fa-book
+  #   format:
+  #     - date
+  #     - title
+  #     - authors
+  #     - journal
+  #   types:
+  #     - Journal Articles
+  #     - Proceedings
+  #   list:
+  #     - title: >-
+  #         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  #         eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  #       authors: "F Last, F Second, P secondary"
+  #       date: "2018"
+  #       journal: "Journal of Field 52 (16), 9033-9044"
+  #       url: "#"
+  #       type: Journal Articles
+  #     - title: >-
+  #         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  #         eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  #       authors: "F Last, F Second, P secondary"
+  #       date: "2018"
+  #       journal: "Journal of Field 52 (16), 9033-9044"
+  #       url: "#"
+  #       type: Journal Articles
+  #     - title: >-
+  #         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  #         eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  #       authors: "F Last, F Second, P secondary"
+  #       date: "2018"
+  #       journal: "Journal of Field 52 (16), 9033-9044"
+  #       url: "#"
+  #       type: Proceedings
+  project:
+    title: Games
+    icon: fas fa-project-diagram
+    list:
+      - title: Granola Jumps
+        url: "https://guiks.itch.io/granola-jumps"
+        description: A 2D casual mobile game where you do shell jumps. Available on iOS and Android.
+        imageIcon: GranolaJumps.png
+      - title: "Save The Planets: Meteor Storm"
+        url: "https://guiks.itch.io/save-the-planets"
+        description: An arcade mobile game where you protect the planet from waves of meteors. Available on iOS and Android.
+        imageIcon: STP.png
+      - title: Indigo (In development)
+        url: "https://guiks.itch.io/indigo"
+        description: A 2D platformer with level editing tools and custom mods using Lua script. Made using C++, SDL, OpenGL, Lua.
+        imageIcon: Indigo.png
+  skill:
+    title: Skills
+    panelId: skill-panel
+    icon: fas fa-cogs
+    list:
+      - skill: Unity
+      - skill: C#
+      - skill: C++
+      - skill: OpenGL
+      - skill: Lua
+      - skill: Javascript
+  hobby:
+    title: Hobbies
+    icon: fas fa-gamepad
+    list:
+      - hobby: Cooking
+      - hobby: Hiking
+      - hobby: Baking

@@ -1,0 +1,13 @@
+{{ range.Site.Params.project.list }}
+<div class="containerProject" style="display: flex; align-items: center; justify-content: center;">
+	<div class="imageProject" style="float: left">
+		<img src="{{ `images` | relURL }}/{{ .imageIcon }}" style="max-width: 70px"/>
+	</div>
+	<div class="textProject" style="float: right; padding-left: 20px; padding-top: 10px;">
+		<h4>
+		  <a href="{{ .url }}">{{- .title -}}</a>
+		</h4>
+		<p class="markdownify">{{- .description | markdownify -}}</p>
+	</div>
+</div>
+{{ end }}

@@ -143,8 +143,8 @@ params:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: "https://github.com/GuilhermoBarretti"
-        # - icon: fab fa-x-twitter
-        #   url: "https://twitter.com/guilhermodsb"
+        - icon: fab fa-x-twitter
+          url: "https://twitter.com/guilhermodsb"
       customIcons:
         - icon: /fav.png
           url: "https://example.com"
@@ -304,11 +304,11 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
+      - title: Granola Jumps
+        content: A casual mobile game where you tap the screen to throw the shell to do more jumps.
+        image: /images/projects/GranolaThumbnail_300x250.png
         featured:
-          name: Demo
+          name: Granola Jumps
           link: https://hugo-profile.netlify.app
         badges:
           - "Hugo"
