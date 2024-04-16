@@ -47,9 +47,9 @@ params:
         url: "https://www.linkedin.com/in/guilhermo-barretti-304999236/"
         title: LinkedIn
   showInAccordion:
-    - item: aboutme
     - item: project
       expand: true
+    - item: aboutme
     - item: education
     - item: skill
     # - item: experience
