@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Image Gallery on Guilhermo Barretti</title>
-    <link>https://example.org/gallery/</link>
+    <link>https://guilhermo.games/gallery/</link>
     <description>Recent content in Image Gallery on Guilhermo Barretti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://example.org/gallery/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://guilhermo.games/gallery/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
