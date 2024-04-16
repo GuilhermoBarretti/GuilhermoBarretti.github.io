@@ -14,6 +14,7 @@ categories = [
 
 # Indigo
 
+<iframe src="https://medium.com/media/d05b0f6344e89702f337449f30293e48" frameborder=0></iframe>
 Exemplo de uma fase desafiadora para testar as mecânicas do jogo
 
 A intenção deste primeiro post é mostrar qual é a ideia do jogo Indigo, qual o estado do desenvolvimento dele, e para onde ele irá.
@@ -24,7 +25,7 @@ No momento, o foco do desenvolvimento está em implementar funcionalidades da *e
 
 ## Por que não usar uma engine*?*
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/VSUr1eoMr9c" frameborder="0" allowfullscreen></iframe></center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VSUr1eoMr9c" frameborder="0" allowfullscreen></iframe>
 
 Eu já venho brincando com SDL há um bom tempo e gosto da ideia de ter controle de tudo (ou boa parte) que acontece no meu código. Sempre tive a curiosidade de saber como as coisas funcionam em níveis mais baixo e gosto de mexer com isso.
 

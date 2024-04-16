@@ -13,7 +13,7 @@
       <link>http://localhost:1313/blog/indigo/</link>
       <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/indigo/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+      <description>Indigo A intenção deste primeiro post é mostrar qual é a ideia do jogo Indigo, qual o estado do desenvolvimento dele, e para onde ele irá.&#xA;Indigo é o jogo de plataforma 2D com criação de fases que estou fazendo usando C++, OpenGL e SDL.&#xA;No momento, o foco do desenvolvimento está em implementar funcionalidades da engine. As seguintes funcionalidades já estão implementadas até agora: editor de fases (colocar/apagar sprites, copiar, colar, operações em área, voltar ações, redimensionar o tamanho do level), física, colisões, frame cap, suporte para mods utilizando scripts Lua, sistema de replay, texture atlas.</description>
     </item>
   </channel>
 </rss>
