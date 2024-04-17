@@ -59,7 +59,8 @@
 }
 
 .profile2 {
-	@apply col-span-2  bg-[#0c2432];
+	@apply col-span-2  bg-[#0f2c3d];
+	/* @apply col-span-2  bg-[#0c2432]; */
 	/* @apply col-span-2; border-radius: 8px; box-shadow: 5px 5px 10px #2f2b3b, -5px -5px 10px #7562ab; */
 	/* @apply col-span-2; border-radius: 8px; box-shadow: inset 3px 3px 6px #4d4073, inset -6px -6px 12px #645395; */
 }
