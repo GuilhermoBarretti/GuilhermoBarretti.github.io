@@ -141,7 +141,7 @@ params:
   #       url: "#"
   #       type: Proceedings
   project:
-    title: Games
+    title: My Games
     icon: fas fa-gamepad
     # icon: fas fa-project-diagram
     list:

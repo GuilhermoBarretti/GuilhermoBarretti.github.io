@@ -5,18 +5,23 @@ module.exports = {
   content: [
     "content/**/*.md",
     "layouts/**/*.html",
+    "static/**/*.html",
     "./themes/**/layouts/**/*.html",
     "./content/**/layouts/**/*.html",
     "./layouts/**/*.html",
     "./content/**/*.html",
+    './static/**/*.html'
   ],
   darkMode: "class", // 'media' or 'class'
   theme: {
-    extend: {
+	  extend: {
+		'nm-bg': '#5b4b87',
+		'nm-dark': '#4d4073',
+		'nm-light': '#645395',
       backgroundColor: (theme) => ({
-        darkest: theme(`colors.stone.900`),
-        darker: theme(`colors.stone.800`),
-        dark: theme(`colors.stone.700`),
+        darkest: '#4d4073',
+        darker: '#5b4b87',
+        dark: '#645395',
       }),
       typography: (theme) => ({
         DEFAULT: {

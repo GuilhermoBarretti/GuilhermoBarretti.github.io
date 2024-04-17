@@ -15,10 +15,15 @@
     transition: 0.3s ease-out;
   }
   h2.accordion {
-    @apply text-blue-600 dark:text-indigo-400;
+    @apply text-blue-600; color: #70acd1;
+    /* @apply text-blue-600; color: #5d90af; */
+    /* @apply text-blue-600 dark:text-indigo-400; */
   }
   a {
-    @apply text-blue-500 hover:text-blue-700 hover:underline dark:text-indigo-300 dark:hover:text-indigo-500;
+    @apply hover:underline text-[#37b2ff];
+    /* @apply hover:underline text-blue-500 hover:text-blue-700; */
+    /* @apply hover:underline text-[#70acd1] hover:text-indigo-500; */
+    /* @apply text-blue-500 hover:text-blue-700 hover:underline dark:text-indigo-300 dark:hover:text-indigo-500; */
   }
   .active {
     @apply overflow-visible;
@@ -39,22 +44,56 @@
     @apply text-lg mb-2 mt-1;
   }
 
+.boxShadow {
+	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #13374d;
+}
+
+.profile1 {
+	margin: 0px 5px 15px 5px;
+	/* @apply rounded-none; border-radius: 8px; box-shadow: 5px 5px 10px #2f2b3b, -5px -5px 10px #7562ab; margin: 0px 5px 15px 5px; */
+}
+
+.profile2 {
+	@apply col-span-2;
+	/* @apply col-span-2; border-radius: 8px; box-shadow: 5px 5px 10px #2f2b3b, -5px -5px 10px #7562ab; */
+	/* @apply col-span-2; border-radius: 8px; box-shadow: inset 3px 3px 6px #4d4073, inset -6px -6px 12px #645395; */
+}
+
+.profile3 {
+	@apply p-2;
+	/* @apply bg-gray-300 dark:bg-darker p-2; border-radius: 8px; box-shadow: 5px 5px 10px #4d4073, -5px -5px 10px #645395; */
+}
+
+.profilePhoto {
+	@apply rounded-full; border-radius: 8px;
+	/* @apply rounded-full; border-radius: 8px; box-shadow: 5px 5px 10px #4d4073, -5px -5px 10px #645395; */
+}
+
+/* .paccordion { */
+	/* @apply hover:nm-dark;  */
+/* } */
+
   .prose ul,
   .prose ol {
     li::marker {
-      @apply text-gray-700 dark:text-gray-200;
+      @apply rounded; color: #7562ab;
+      /* @apply text-gray-700 dark:text-gray-200; */
     }
   }
 
   body {
-    @apply  text-base bg-stone-50 dark:text-stone-50 dark:bg-darkest;
+    @apply  text-base bg-stone-50 text-gray-200; background-color: #0c2432;
+    /* @apply  text-base bg-stone-50 text-gray-200; background-color: #5b4b87; */
   }
   html {
     touch-action: manipulation;
     scroll-behavior: smooth;
   }
+  p.rounded {
+	@apply hover:bg-[#13374d];
+  }
   p {
-    @apply mt-2 mb-2;
+    @apply mt-2 mb-2 ;
   }
   summary {
     @apply block text-sm;

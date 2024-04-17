@@ -77,15 +77,15 @@
 <body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
     
     <header
-  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 justify-between"
 >
   <div>
-    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="http://localhost:1313/">Home</a>    
-    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/blog">Blog</a>
+    <a class="no-underline p-2 rounded hover:bg-[#13374d]" href="http://localhost:1313/">Home</a>    
+    <a class="no-underline p-2 rounded hover:bg-[#13374d]" href="/blog">Blog</a>
   </div>
   
   <i
-    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-indigo-300 dark:hover:text-indigo-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    class="fas fa-sun invisible theme-toggle text-blue-500 hover:text-blue-700 dark:text-indigo-300 dark:hover:text-indigo-500 cursor-pointer text-lg mr-9 sm:mr-0"
     onclick="lightDark(this)"
   ></i>
 </header>
@@ -109,13 +109,13 @@
 
     
     <main class="grow">
-<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
-  <div class="col-span-2">
-    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
+<div class="profile1 boxShadow grid grid-cols-1 md:grid-cols-5 gap-0 sm">
+  <div class="profile2 boxShadow">
+    <div class="profile3">
       <div class="flex flex-col justify-center">
         <div class=""><div class="w-100 h-100 flex justify-center p-4">
   <img
-    class="rounded rounded-full"
+    class="profilePhoto boxShadow rounded rounded-full"
     src="/images/profile.jpg"
     alt=""
     style="max-width: 250px"
@@ -164,18 +164,18 @@
       </div>
     </div>
   </div>
-  <div class="col-span-3 relative">
+  <div class="col-span-3 relative p-2">
     
     <div class="px-2">
       <h2 class="my-0 accordion active">
         
         <p
-          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          class="rounded m-0 p-2"
           onclick="expandAccordion(this)"
           style="cursor: pointer"
         >
           <i class="fas fa-gamepad"></i>
-          Games</p>
+          My Games</p>
       </h2>
 
       <div
@@ -227,7 +227,7 @@
       <h2 class="my-0 accordion">
         
         <p
-          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          class="rounded m-0 p-2"
           onclick="expandAccordion(this)"
           style="cursor: pointer"
         >
@@ -250,7 +250,7 @@
       <h2 class="my-0 accordion">
         
         <p
-          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          class="rounded m-0 p-2"
           onclick="expandAccordion(this)"
           style="cursor: pointer"
         >
@@ -281,7 +281,7 @@
       <h2 class="my-0 accordion">
         
         <p
-          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          class="rounded m-0 p-2"
           onclick="expandAccordion(this)"
           style="cursor: pointer"
         >
