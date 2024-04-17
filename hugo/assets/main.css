@@ -44,6 +44,14 @@
     @apply text-lg mb-2 mt-1;
   }
 
+h1 {
+	@apply text-[#70acd1];
+}
+
+.gamePage {
+	@apply text-5xl mb-5 mt-1 font-black;
+}
+
 .boxShadow {
 	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #0e293a;
 	/* border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #13374d; */
@@ -80,6 +88,13 @@
 	/* background-color: #123549; */
 }
 
+.contentPage {
+	@apply rounded-lg p-6 text-white;
+	box-shadow: inset 3px 3px 6px #000000, inset -6px -6px 12px #0e293a;
+	background-color: #123549;
+	margin: 0px 10px 20px 10px;
+}
+
 /* .paccordion { */
 	/* @apply hover:nm-dark;  */
 /* } */
@@ -87,7 +102,7 @@
   .prose ul,
   .prose ol {
     li::marker {
-      @apply rounded; color: #7562ab;
+      @apply rounded;
       /* @apply text-gray-700 dark:text-gray-200; */
     }
   }
@@ -136,14 +151,10 @@
   }
 }
 
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
-	display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .example {
-	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
-  }
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 300px;
+	max-height: 300px;
+}

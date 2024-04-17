@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="prose dark:prose-invert max-w-none">
+<div class="prose max-w-none">
   <h1 class="standard {{ if eq .Kind `term` }}font-italic{{ end }}">
     {{ if eq .Kind "term" }}#{{ end }}{{- .Title -}}
   </h1>

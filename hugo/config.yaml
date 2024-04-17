@@ -3,6 +3,14 @@ languageCode: en-us
 publishDir: ../docs/
 build:
   writeStats: true
+
+# Allow html in .md files
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+# end
+
 params:
   title: Guilhermo Barretti
   # author: Darshan Baral

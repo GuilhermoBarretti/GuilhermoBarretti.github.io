@@ -1,0 +1,42 @@
+<script  type="text/javascript">
+	var isMobile = {
+		Android: function() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function() {
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
+
+	};
+
+	if ( isMobile.Android() ) {
+		window.location.href = "https://play.google.com/store/apps/details?id=com.Guilhermo.GranolaJumps";
+		// window.open("https://play.google.com/store/apps/details?id=com.Guilhermo.GranolaJumps", '_blank').focus();
+		// window.location.href = "https://guilhermo.games/";
+	}
+	else if(isMobile.iOS())
+	{
+		window.location.href = "https://apps.apple.com/us/app/granola-jumps/id6479206004?platform=iphone";
+		// window.open("https://apps.apple.com/us/app/granola-jumps/id6479206004?platform=iphone", '_blank').focus();
+		// window.location.href = "https://guilhermo.games/";
+	}
+	else
+	{
+		window.location.href = "https://guiks.itch.io/granola-jumps";
+		// window.open("https://guiks.itch.io/granola-jumps", '_blank').focus();
+		// window.location.href = "https://guilhermo.games/";
+	}
+</script>
+

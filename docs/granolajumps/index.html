@@ -1,3 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto dark"><head>
+  <title>Guilhermo Barretti</title>
+
+<meta name="theme-color" content="#081720" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.124.1" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="shortcut icon" href="/Icon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+
+
+
+
+
+<link href="/main.min.9b88d410b989ee62c6ad965f0a97c6e998261e926294bf7bf5efb1ad3d309da5.css" rel="stylesheet" />
+
+
+  
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 justify-between"
+>
+  <div>
+    <a class="no-underline p-2 rounded hover:bg-[#13374d]" href="https://guilhermo.games/">Home</a>    
+    <a class="no-underline p-2 rounded hover:bg-[#13374d]" href="/blog">Blog</a>
+  </div>
+  
+  <i
+    class="fas fa-sun invisible theme-toggle text-blue-500 hover:text-blue-700 dark:text-indigo-300 dark:hover:text-indigo-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="lightDark(this)"
+  ></i>
+</header>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+<div class="contentPage prose max-w-none">
+<div class="mb-3">
+  
+  
+  
+</div>
+<div class="content">
+  <div style="width:100%; text-align: center;">
+<p class="gamePage">Granola Jumps</p>
+<img src="/images/GranolaJumps.png" class="center rounded-lg">
+<a href="https://apps.apple.com/app/granola-jumps/id6479206004?platform=iphone" target="_blank">
+	<img src="/images/apple.png" class="center">
+</a>
+<a href="https://play.google.com/store/apps/details?id=com.Guilhermo.GranolaJumps" target="_blank">
+	<img src="/images/google.png" class="center">
+</a>
+</div>
 <script  type="text/javascript">
 	var isMobile = {
 		Android: function() {
@@ -21,22 +151,25 @@
 
 	};
 
-	if ( isMobile.Android() ) {
+	if (isMobile.Android())
+	{
 		window.location.href = "https://play.google.com/store/apps/details?id=com.Guilhermo.GranolaJumps";
-		// window.open("https://play.google.com/store/apps/details?id=com.Guilhermo.GranolaJumps", '_blank').focus();
-		// window.location.href = "https://guilhermo.games/";
 	}
 	else if(isMobile.iOS())
 	{
-		window.location.href = "https://apps.apple.com/us/app/granola-jumps/id6479206004?platform=iphone";
-		// window.open("https://apps.apple.com/us/app/granola-jumps/id6479206004?platform=iphone", '_blank').focus();
-		// window.location.href = "https://guilhermo.games/";
+		window.location.href = "https://apps.apple.com/app/granola-jumps/id6479206004?platform=iphone";
 	}
-	else
-	{
-		window.location.href = "https://guiks.itch.io/granola-jumps";
-		// window.open("https://guiks.itch.io/granola-jumps", '_blank').focus();
-		// window.location.href = "https://guilhermo.games/";
-	}
+
 </script>
 
+</div>
+</div>
+
+
+    </main>
+    
+    
+
+    
+  </body>
+</html>
