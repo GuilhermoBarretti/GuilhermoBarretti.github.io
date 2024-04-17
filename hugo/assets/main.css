@@ -45,7 +45,12 @@
   }
 
 .boxShadow {
-	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #13374d;
+	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #0e293a;
+	/* border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #13374d; */
+}
+
+.boxShadowBR {
+	border-radius: 8px; box-shadow: 5px 5px 10px #000000;
 }
 
 .profile1 {
@@ -54,7 +59,7 @@
 }
 
 .profile2 {
-	@apply col-span-2;
+	@apply col-span-2  bg-[#0c2432];
 	/* @apply col-span-2; border-radius: 8px; box-shadow: 5px 5px 10px #2f2b3b, -5px -5px 10px #7562ab; */
 	/* @apply col-span-2; border-radius: 8px; box-shadow: inset 3px 3px 6px #4d4073, inset -6px -6px 12px #645395; */
 }
@@ -67,6 +72,11 @@
 .profilePhoto {
 	@apply rounded-full; border-radius: 8px;
 	/* @apply rounded-full; border-radius: 8px; box-shadow: 5px 5px 10px #4d4073, -5px -5px 10px #645395; */
+}
+
+.contentBox {
+	@apply bg-[#123549];
+	/* background-color: #123549; */
 }
 
 /* .paccordion { */
@@ -82,7 +92,7 @@
   }
 
   body {
-    @apply  text-base bg-stone-50 text-gray-200; background-color: #0c2432;
+    @apply  text-base bg-stone-50 text-gray-200; background-color: #081720;
     /* @apply  text-base bg-stone-50 text-gray-200; background-color: #5b4b87; */
   }
   html {
