@@ -1019,7 +1019,7 @@ h5 {
 	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #13374d;
 }
 .profile1 {
-	margin: 0px 5px 15px 5px;
+	margin: 0px 10px 15px 10px;
 	/* @apply rounded-none; border-radius: 8px; box-shadow: 5px 5px 10px #2f2b3b, -5px -5px 10px #7562ab; margin: 0px 5px 15px 5px; */
 }
 .profile2 {
