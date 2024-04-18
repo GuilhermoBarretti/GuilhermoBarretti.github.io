@@ -1132,7 +1132,7 @@ blockquote {
 }
 blockquote:is(.dark *) {
   --tw-bg-opacity: 1;
-  background-color: rgb(100 83 149 / var(--tw-bg-opacity));
+  background-color: rgb(18 53 73 / var(--tw-bg-opacity));
 }
 p.tags:hover,p
   .categories:hover {

@@ -19,9 +19,9 @@ module.exports = {
 		'nm-dark': '#4d4073',
 		'nm-light': '#645395',
       backgroundColor: (theme) => ({
-        darkest: '#4d4073',
-        darker: '#5b4b87',
-        dark: '#645395',
+        darkest: '#081720',
+        darker: '#0f2c3d',
+        dark: '#123549',
       }),
       typography: (theme) => ({
         DEFAULT: {
