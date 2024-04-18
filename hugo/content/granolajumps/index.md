@@ -1,13 +1,17 @@
-<div style="width:100%; text-align: center;">
+---
+showthedate: false
+---
 
-<p class="gamePage">Granola Jumps</p>
-<img src="/images/GranolaJumps.png" class="center rounded-lg">
+<div class="gamePage not-prose" style="width:100%; text-align: center;">
+
+<p>Granola Jumps</p>
+<img src="/images/GranolaJumps.png" class="center max300 rounded-lg">
 
 <a href="https://apps.apple.com/app/granola-jumps/id6479206004?platform=iphone" target="_blank">
-	<img src="/images/apple.png" class="center">
+	<img src="/images/apple.png" class="center max300">
 </a>
 <a href="https://play.google.com/store/apps/details?id=com.Guilhermo.GranolaJumps" target="_blank">
-	<img src="/images/google.png" class="center">
+	<img src="/images/google.png" class="center max300">
 </a>
 
 </div>

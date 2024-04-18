@@ -48,74 +48,6 @@ h1 {
 	@apply text-[#70acd1];
 }
 
-.gamePage {
-	@apply text-5xl mb-5 mt-1 font-black;
-}
-
-.boxShadow {
-	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #0e293a;
-	/* border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #13374d; */
-}
-
-.boxShadowBR {
-	border-radius: 8px; box-shadow: 5px 5px 10px #000000;
-}
-
-.profile1 {
-	margin: 0px 10px 15px 10px;
-	/* @apply rounded-none; border-radius: 8px; box-shadow: 5px 5px 10px #2f2b3b, -5px -5px 10px #7562ab; margin: 0px 5px 15px 5px; */
-}
-
-.profile2 {
-	@apply col-span-2  bg-[#0f2c3d];
-	/* @apply col-span-2  bg-[#0c2432]; */
-	/* @apply col-span-2; border-radius: 8px; box-shadow: 5px 5px 10px #2f2b3b, -5px -5px 10px #7562ab; */
-	/* @apply col-span-2; border-radius: 8px; box-shadow: inset 3px 3px 6px #4d4073, inset -6px -6px 12px #645395; */
-}
-
-.profile3 {
-	@apply p-2;
-	/* @apply bg-gray-300 dark:bg-darker p-2; border-radius: 8px; box-shadow: 5px 5px 10px #4d4073, -5px -5px 10px #645395; */
-}
-
-.profilePhoto {
-	@apply rounded-full; border-radius: 8px;
-	/* @apply rounded-full; border-radius: 8px; box-shadow: 5px 5px 10px #4d4073, -5px -5px 10px #645395; */
-}
-
-.contentBox {
-	@apply bg-[#123549];
-	/* background-color: #123549; */
-}
-
-.contentPage {
-	@apply rounded-lg p-6 text-white;
-	box-shadow: inset 3px 3px 6px #000000, inset -6px -6px 12px #0e293a;
-	background-color: #123549;
-	margin: 0px 10px 20px 10px;
-}
-
-.blog {
-	@apply rounded-lg p-6 text-white;
-	box-shadow: inset 3px 3px 6px #000000, inset -6px -6px 12px #0e293a;
-	background-color: #0f2c3d;
-	/* background-color: #123549; */
-	margin: 0px 10px 20px 10px;
-}
-
-.blogSummary {
-	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #0e293a;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 10px;
-	background-color: #123549;
-	/* border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #13374d; */
-}
-
-/* .paccordion { */
-	/* @apply hover:nm-dark;  */
-/* } */
-
   .prose ul,
   .prose ol {
     li::marker {
@@ -168,10 +100,126 @@ h1 {
   }
 }
 
+.gamePage {
+	@apply text-5xl mb-5 mt-1 font-black;
+}
+
+.boxShadow {
+	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #0e293a;
+	/* border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #13374d; */
+}
+
+.boxShadowBR {
+	border-radius: 8px; box-shadow: 5px 5px 10px #000000;
+}
+
+.profile1 {
+	margin: 0px 10px 15px 10px;
+	/* @apply rounded-none; border-radius: 8px; box-shadow: 5px 5px 10px #2f2b3b, -5px -5px 10px #7562ab; margin: 0px 5px 15px 5px; */
+}
+
+.profile2 {
+	@apply col-span-2  bg-[#0f2c3d];
+	/* @apply col-span-2  bg-[#0c2432]; */
+	/* @apply col-span-2; border-radius: 8px; box-shadow: 5px 5px 10px #2f2b3b, -5px -5px 10px #7562ab; */
+	/* @apply col-span-2; border-radius: 8px; box-shadow: inset 3px 3px 6px #4d4073, inset -6px -6px 12px #645395; */
+}
+
+.profile3 {
+	@apply p-2;
+	/* @apply bg-gray-300 dark:bg-darker p-2; border-radius: 8px; box-shadow: 5px 5px 10px #4d4073, -5px -5px 10px #645395; */
+}
+
+.profilePhoto {
+	@apply rounded-full; border-radius: 8px;
+	/* @apply rounded-full; border-radius: 8px; box-shadow: 5px 5px 10px #4d4073, -5px -5px 10px #645395; */
+}
+
+.contentBox {
+	@apply bg-[#123549];
+	/* background-color: #123549; */
+}
+
+.blog {
+	@apply rounded-lg p-6 text-white;
+	box-shadow: inset 3px 3px 6px #000000, inset -6px -6px 12px #0e293a;
+	background-color: #0f2c3d;
+	/* background-color: #123549; */
+	margin: 0px 10px 20px 10px;
+}
+
+.blogSummary {
+	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #0e293a;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #123549;
+	/* border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #13374d; */
+}
+
 .center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.contentPage {
+	@apply rounded-lg p-6 text-white;
+	box-shadow: inset 3px 3px 6px #000000, inset -6px -6px 12px #0e293a;
+	background-color: #123549;
+	margin: 0px 10px 20px 10px;
+	max-width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.content {
+	font-size: 19px;
+}
+
+.content img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	max-width: 100%;
+	/* max-height: 100%; */
+	max-height: 620px;
+}
+
+.content h1, 
+.content h2 {
+	color: #9ad1f3;
+}
+
+.content h1 {
+	margin-bottom: 0px;
+}
+
+.content p,
+.content iframe {
+	margin-bottom: 20px;
+}
+
+.content iframe {
+	max-width: 100%;
+}
+
+figcaption {
+	color: #b8b8b8;
+	text-align: center;
+	font-style: italic;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.gamePage img,
+.max300 {
 	max-width: 300px;
 	max-height: 300px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }

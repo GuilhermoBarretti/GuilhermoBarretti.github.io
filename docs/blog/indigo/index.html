@@ -31,7 +31,7 @@
 
 
 
-<link href="/main.min.f56f26ce7559911a897aae0023f21b1ab0aa6336ce1e3554aae3b50b109e981a.css" rel="stylesheet" />
+<link href="/main.min.8a785d3d96cf9a03bf57054777e571831dd20c12f79dc6613d0279b602eb9b9b.css" rel="stylesheet" />
 
 
   
@@ -111,60 +111,61 @@
 
     
     <main class="grow">
-<div class="contentPage prose max-w-none">
+<div class="contentPage prose ">
 <div class="mb-3">
+  <h1 class="top-h1" style="font-size: 2.75em">Indigo</h1>
   
+  <p class="mb-1" style="text-align: right;">December 30, 2021</p>
   
   
 </div>
 <div class="content">
-  <p>A intenção deste primeiro post é mostrar qual é a ideia do jogo Indigo, qual o estado do desenvolvimento dele, e para onde ele irá.
-Indigo é o jogo de plataforma 2D com criação de fases que estou fazendo usando C++, OpenGL e SDL.
-No momento, o foco do desenvolvimento está em implementar funcionalidades da <em>engine</em>. As seguintes funcionalidades já estão implementadas até agora: editor de fases (colocar/apagar <em>sprites</em>, copiar, colar, operações em área, voltar ações, redimensionar o tamanho do <em>level</em>), física, colisões, <em>frame cap</em>, suporte para <em>mods</em> utilizando <em>scripts</em> Lua, sistema de <em>replay</em>, <em>texture atlas</em>. Terminando as funcionalidades básicas o foco será no <em>game design</em> e <em>level design</em>.</p>
-<h1 id="indigo">Indigo</h1>
-<iframe src="https://medium.com/media/d05b0f6344e89702f337449f30293e48" frameborder=0></iframe>
-Exemplo de uma fase desafiadora para testar as mecânicas do jogo
+  <!-- # Indigo -->
+<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/ys2Y0pNRqJ8" frameborder="0" allowfullscreen></iframe>
+<figcaption>Exemplo de uma fase desafiadora para testar as mecânicas do jogo</figcaption>
 <p>A intenção deste primeiro post é mostrar qual é a ideia do jogo Indigo, qual o estado do desenvolvimento dele, e para onde ele irá.</p>
 <p>Indigo é o jogo de plataforma 2D com criação de fases que estou fazendo usando C++, OpenGL e SDL.</p>
 <p>No momento, o foco do desenvolvimento está em implementar funcionalidades da <em>engine</em>. As seguintes funcionalidades já estão implementadas até agora: editor de fases (colocar/apagar <em>sprites</em>, copiar, colar, operações em área, voltar ações, redimensionar o tamanho do <em>level</em>), física, colisões, <em>frame cap</em>, suporte para <em>mods</em> utilizando <em>scripts</em> Lua, sistema de <em>replay</em>, <em>texture atlas</em>. Terminando as funcionalidades básicas o foco será no <em>game design</em> e <em>level design</em>.</p>
-<h2 id="por-que-não-usar-uma-engine">Por que não usar uma engine*?*</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VSUr1eoMr9c" frameborder="0" allowfullscreen></iframe>
+<h2 id="por-que-não-usar-uma-engine">Por que não usar uma engine?</h2>
+<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/VSUr1eoMr9c" frameborder="0" allowfullscreen></iframe>
 <p>Eu já venho brincando com SDL há um bom tempo e gosto da ideia de ter controle de tudo (ou boa parte) que acontece no meu código. Sempre tive a curiosidade de saber como as coisas funcionam em níveis mais baixo e gosto de mexer com isso.</p>
 <p>Creio que eu não teria capacidade ou tempo de fazer isso se o jogo fosse mais complexo, tivesse gráficos 3D ou fosse <em>multiplayer</em> por exemplo, mas para as intenções que tenho para esse jogo é totalmente possível fazer do &ldquo;zero&rdquo; e sozinho.</p>
 <p>Poderia fazer tudo isso numa <em>engine</em> e economizar tempo com coisas que já estão lá pronta? Poderia, mas foi justamente por querer aprender algo como OpenGL e mexer em coisas em mais baixo nível que eu comecei a fazer esse jogo. É algo que gosto muito de fazer e me anima. O jogo deve ser feito no ambiente que melhor te agrada, usando <em>engine</em> ou não, sabendo das vantagens de desvantagens que cada um oferece, e, para mim, fazer minha própria <em>engine</em> foi o que mais me agradou.</p>
-<p>Usando uma *engine <em>pronta,</em> *você economiza bastante tempo com funcionalidades que ela te oferece. Porém, isso pode vir com a desvantagem de que ela é feita para propósito geral, atendendo às múltiplas funcionalidades que nem sempre é direto ao ponto para algo específico e simples que você quer. Fazendo minha própria <em>engine</em>, o código é focado em apenas nas coisas que preciso para o meu jogo e pensado no *workflow *que mais me satisfaz.</p>
+<p>Usando uma <em>engine</em> pronta, você economiza bastante tempo com funcionalidades que ela te oferece. Porém, isso pode vir com a desvantagem de que ela é feita para propósito geral, atendendo às múltiplas funcionalidades que nem sempre é direto ao ponto para algo específico e simples que você quer. Fazendo minha própria <em>engine</em>, o código é focado em apenas nas coisas que preciso para o meu jogo e pensado no <em>workflow</em> que mais me satisfaz.</p>
 <p>Cada um utiliza o ambiente e ferramentas que mais lhe deixa confortável para desenvolver e, para mim, essa foi a forma que mais me agradou para fazer este jogo.</p>
-<p>Contudo, não estou fazendo exatamente tudo do &ldquo;zero&rdquo;, por isso o uso das aspas. Estou utilizando algumas *libraries *que ajudam bastante e são muito boas. A seguir, vou falar um pouco de cada uma que escolhi usar para ajudar a fazer minha <em>engine.</em></p>
+<p>Contudo, não estou fazendo exatamente tudo do &ldquo;zero&rdquo;, por isso o uso das aspas. Estou utilizando algumas <em>libraries</em> que ajudam bastante e são muito boas. A seguir, vou falar um pouco de cada uma que escolhi usar para ajudar a fazer minha <em>engine</em>.</p>
 <h2 id="sdl">SDL</h2>
 <p><img src="https://cdn-images-1.medium.com/max/2000/0*EOcCgyVqaajcBq-G.png" alt=""></p>
-<p><em>Simple DirectMedia Layer</em> é uma *library open source <em>que fornece acesso ao teclado, mouse, áudio, controles, e a gráficos através do OpenGL. Ela tem suporte oficial para as principais plataformas como Windows, Mac, Linux, Android, iOS e outras plataformas também são suportadas através da ajuda da comunidade. Com isso, foi muito fácil compilar Indigo para Windows, Mac e Android sem muitos obstáculos. Além disso, pequenas e grandes empresas de jogos utilizam o SDL e <a href="https://www.patreon.com/posts/58563886">até financiam o desenvolvimento dessa *library</a></em>. Há outras <em>libraries</em> parecidas como SFML, raylib, Allegro, mas acredito que a SDL é a mais utilizada e está melhor desenvolvida.</p>
+<p><em>Simple DirectMedia Layer</em> é uma <em>library open source</em> que fornece acesso ao teclado, mouse, áudio, controles, e a gráficos através do OpenGL. Ela tem suporte oficial para as principais plataformas como Windows, Mac, Linux, Android, iOS e outras plataformas também são suportadas através da ajuda da comunidade. Com isso, foi muito fácil compilar Indigo para Windows, Mac e Android sem muitos obstáculos. Além disso, pequenas e grandes empresas de jogos utilizam o SDL e <a href="https://www.patreon.com/posts/58563886">até financiam o desenvolvimento dessa <em>library</em></a>. Há outras <em>libraries</em> parecidas como SFML, raylib, Allegro, mas acredito que a SDL é a mais utilizada e está melhor desenvolvida.</p>
 <p>Já tenho brincado com ela há um tempo; é uma ótima biblioteca, e não vejo necessidade de ter que fazer isso do zero, pelo menos para o que eu quero, pois tem todas as funcionalidades básicas para você começar sua <em>engine</em>. Criar uma janela no Windows pode até não ser tão difícil, porém fazer isso e muitas outras funcionalidades para cada plataforma que você quer que seu jogo rode já é algo muito mais trabalhoso, pois cada plataforma tem um jeito diferente de fazer. Ela cuida muito bem dessas funções (criar janelas, pegar input do teclado/mouse/controle), o desenvolvimento é bem ativo e boa parte da indústria utiliza. Por esses fatores, eu escolhi utilizar essa <em>library</em>.</p>
 <h2 id="dear-imgui"><strong>Dear ImGui</strong></h2>
-<p><img src="https://cdn-images-1.medium.com/max/2784/1*FEprVgJZtc8kkk8ii8uwDA.png" alt="A utilização de Dear ImGui no Indigo"><em>A utilização de Dear ImGui no Indigo</em></p>
-<p>Uma outra <em>library</em> que tem me ajudado bastante é a <a href="https://github.com/ocornut/imgui">*Dear ImGui</a><em>, que é uma <em>library</em> para renderizar GUI</em> <em>(Graphical User Interface) de uma maneira muito fácil. Isso me ajuda a criar varias janelas para menus para alterar configurações da <em>engine</em>, dos objetos, gravidade, velocidade, mensurar o FPS, ou qualquer outra coisa que eu queira ter acesso fácil e visual dentro do jogo</em>.*</p>
+<p><img src="https://cdn-images-1.medium.com/max/2784/1*FEprVgJZtc8kkk8ii8uwDA.png" alt="A utilização de Dear ImGui no Indigo"></p>
+<figcaption>A utilização de Dear ImGui no Indigo</figcaption>
+<p>Uma outra <em>library</em> que tem me ajudado bastante é a <a href="https://github.com/ocornut/imgui"><em>Dear ImGui</em></a>, que é uma <em>library</em> para renderizar GUI (Graphical User Interface) de uma maneira muito fácil. Isso me ajuda a criar varias janelas para menus para alterar configurações da <em>engine</em>, dos objetos, gravidade, velocidade, mensurar o FPS, ou qualquer outra coisa que eu queira ter acesso fácil e visual dentro do jogo.</p>
 <p>Gostei muito dela pois foi muito fácil integrar ao meu código e começar a criar a interface do jeitinho que quero.</p>
 <p>Toda a documentação desta <em>library</em> está em um código com exemplo de todas as funcionalidades dela. Quer saber como criar um <em>combo box</em>? Tem um exemplo no código utilizando ela de forma simples e fácil de entender!</p>
 <p>Perdi um bom tempo só brincando com as funcionalidades, testando o que é possível criar com ela e <a href="https://github.com/ocornut/imgui/issues/4451">até vendo o que os outros conseguem fazer com ela</a>. Recomendo muito!</p>
 <h2 id="cereal">Cereal</h2>
 <p><img src="https://cdn-images-1.medium.com/max/2000/0*7-t0Vu2c0aQHJi-n.png" alt=""></p>
-<p>O jogo precisa salvar todas as informações em arquivos. Informações das configurações da <em>engine</em>, dos <em>levels</em>, dos objetos e muitas outras coisas. Para isso eu decidi utilizar <a href="https://uscilab.github.io/cereal/">Cereal</a>, que é uma *library header-only *em C++ para serializar dados em vários formatos diferentes como XML, JSON ou binário. Estou gostando bastante dela, pois é muito fácil de utilizar e faz muito bem o trabalho de salvar os dados. A única coisa que não gostei tanto foi que o tempo de compilação das partes do código que utiliza ela aumenta bastante.</p>
+<p>O jogo precisa salvar todas as informações em arquivos. Informações das configurações da <em>engine</em>, dos <em>levels</em>, dos objetos e muitas outras coisas. Para isso eu decidi utilizar <a href="https://uscilab.github.io/cereal/">Cereal</a>, que é uma <em>library header-only</em> em C++ para serializar dados em vários formatos diferentes como XML, JSON ou binário. Estou gostando bastante dela, pois é muito fácil de utilizar e faz muito bem o trabalho de salvar os dados. A única coisa que não gostei tanto foi que o tempo de compilação das partes do código que utiliza ela aumenta bastante.</p>
 <p>Não estava nem um pouco afim de criar meu <em>serializer</em> e achei essa <em>library</em> e gostei bastante.</p>
 <h2 id="lua-scripts"><strong>Lua scripts</strong></h2>
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*XkdvAJ-a2sUsT-0CM_A7rQ.png" alt="Exemplo de um script Lua para um objeto (Shell/Casco)"><em>Exemplo de um script Lua para um objeto (Shell/Casco)</em></p>
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*XkdvAJ-a2sUsT-0CM_A7rQ.png" alt="Exemplo de um script Lua para um objeto (Shell/Casco)"></p>
+<figcaption>Exemplo de um script Lua para um objeto (Shell/Casco)</figcaption>
 <p>A criação de fases não será limitada apenas aos <em>game objects</em> oficiais do jogo; será possível criar <em>game objects</em> customizados utilizando scripts Lua. Isso facilitará muito a criação de <em>mods</em> para o jogo. Com ele, é possível ter controle de tudo que o objeto faz, como ele reage a colisões, criar a própria física dele (ou usar o padrão), alterar os sprites/animações, instanciar novos objetos, etc. Há infinitas possibilidades de criações.</p>
-<p>Explicando de forma bem rápida, Lua é uma linguagem de programação interpretada desenvolvida aqui no Brasil na PUC-Rio. É uma linguagem muito leve e fácil de &ldquo;embbedar&rdquo;* <em>no seu código</em>. *Seu código compilado (aquilo que você precisa &ldquo;embeddar&rdquo; na sua aplicação) tem por volta de 400 KB apenas! É uma linguagem muito rápida comparada às outras interpretadas como Javascript ou Python por exemplo. E é interpretada, ou seja, todo código é compilado em tempo de execução e roda de forma contida dentro de sua <em>Virtual Machine</em>, trazendo mais segurança para os scripts que você rodar de outras pessoas. Não é à toa que essa é uma linguagem amplamente usada para *mods *de jogos.</p>
+<p>Explicando de forma bem rápida, Lua é uma linguagem de programação interpretada desenvolvida aqui no Brasil na PUC-Rio. É uma linguagem muito leve e fácil de &ldquo;embbedar&rdquo; no seu código. Seu código compilado (aquilo que você precisa &ldquo;embeddar&rdquo; na sua aplicação) tem por volta de 400 KB apenas! É uma linguagem muito rápida comparada às outras interpretadas como Javascript ou Python por exemplo. E é interpretada, ou seja, todo código é compilado em tempo de execução e roda de forma contida dentro de sua <em>Virtual Machine</em>, trazendo mais segurança para os scripts que você rodar de outras pessoas. Não é à toa que essa é uma linguagem amplamente usada para <em>mods</em> de jogos.</p>
 <h2 id="slopes"><strong>Slopes</strong></h2>
 <p><img src="https://cdn-images-1.medium.com/max/2784/1*EGpWNDg8juYHb1n4DmoeVg.png" alt=""></p>
 <p>A implementação mais recente do jogo foi <em>slopes</em> (rampas)! Há duas intensidades de inclinações. Olhando a captura de tela, a rampa à esquerda do personagem é mais leve e à direita mais íngrime. Futuramente, irei fazer um post detalhado sobre essa implementação!</p>
 <h2 id="o-que-indigo-é-no-momento-e-para-onde-vai">O que Indigo é no momento e para onde vai</h2>
 <p><img src="https://cdn-images-1.medium.com/max/2000/1*i0PIhTPxYgWOvPdKSY3zEQ.png" alt=""></p>
 <blockquote>
-<h1 id="indigo-é-uma-cor-entre-o-azul-e-o-violeta-é-a-cor-da-devoção-sabedoria-justiça-e-conhecimento-atrelada-à-intuição-e-o-que-não-é-visto-é-também-considerada-uma-cor-espiritual">Indigo é uma cor entre o azul e o violeta. É a cor da devoção, sabedoria, justiça e conhecimento. Atrelada à intuição e o que não é visto, é também considerada uma cor espiritual.</h1>
-<h1 id="como-muitas-cores-indigo-recebe-o-nome-de-objeto-do-mundo-natural--a-planta-nomeada-indigo-utilizada-para-tingir-roupas">Como muitas cores, indigo recebe o nome de objeto do mundo natural — a planta nomeada indigo utilizada para tingir roupas.</h1>
+<p>Indigo é uma cor entre o azul e o violeta. É a cor da devoção, sabedoria, justiça e conhecimento. Atrelada à intuição e o que não é visto, é também considerada uma cor espiritual.
+Como muitas cores, indigo recebe o nome de objeto do mundo natural — a planta nomeada indigo utilizada para tingir roupas.</p>
 </blockquote>
 <p>No momento, Indigo é um editor de fases que possuí alguns objetos como casco, <em>on/off switch</em>, espinhos, trampolim, canhão, cordas, etc. É possível criar/salvar/jogar fases, tem um sistema de <em>replay</em> das fases que você jogou, toda física/detecção de colisões foram feitas do zero, e é possível criar novos objetos utilizando scripts Lua. Com o personagem, é possível dar <em>dash</em>, <em>wall slide</em>, segurar e jogar objetos.</p>
-<p>A ideia do jogo pronto é ser um jogo de plataforma 2D desafiador, com bastante fases e apenas um pouquinho de história. O editor de fases será liberado para os jogadores/jogadoras criarem e compartilharem suas próprias fases, tendo amplo suporte para *mods *através de scripts Lua. Acredito estar um pouco longe disso, mas vamos vendo como o jogo vai se moldando até lá.</p>
-<p>Após terminar as funcionalidades básicas da <em>engine</em>,* <em>o foco será voltado para o <em>game design</em> e <em>level design</em>. É uma área que também gosto muito mas tenho muito a aprender ainda</em>.*</p>
+<p>A ideia do jogo pronto é ser um jogo de plataforma 2D desafiador, com bastante fases e apenas um pouquinho de história. O editor de fases será liberado para os jogadores/jogadoras criarem e compartilharem suas próprias fases, tendo amplo suporte para <em>mods</em> através de scripts Lua. Acredito estar um pouco longe disso, mas vamos vendo como o jogo vai se moldando até lá.</p>
+<p>Após terminar as funcionalidades básicas da <em>engine</em>, o foco será voltado para o <em>game design</em> e <em>level design</em>. É uma área que também gosto muito mas tenho muito a aprender ainda.</p>
 <p>Futuramente, farei mais posts sobre assuntos específicos do desenvolvimento dele, como física, colisões, replay, <em>slopes</em>, <em>scripts</em> Lua, <em>texture atlas</em>, e muito mais.</p>
 <p>Você pode acompanhar mais sobre o desenvolvimento do jogo me seguindo aqui no <a href="https://guiks.medium.com/">Medium</a>, no <a href="https://twitter.com/guilhermodsb">Twitter</a>, na minha página no <a href="https://guiks.itch.io/">Itch.io</a> e na <a href="https://twitch.tv/guiks7">Twitch</a>.</p>
 </div>

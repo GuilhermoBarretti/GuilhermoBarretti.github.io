@@ -1,13 +1,17 @@
-<div style="width:100%; text-align: center;">
+---
+showthedate: false
+---
 
-<p class="gamePage">Save The Planets: Meteor Storm</p>
-<img src="/images/STP.png" class="center rounded-lg">
+<div class="gamePage not-prose" style="width:100%; text-align: center;">
+
+<p>Save The Planets: Meteor Storm</p>
+<img src="/images/STP.png" class="center max300 rounded-lg">
 
 <a href="https://apps.apple.com/app/id6459537872" target="_blank">
-	<img src="/images/apple.png" class="center">
+	<img src="/images/apple.png" class="center max300">
 </a>
 <a href="https://play.google.com/store/apps/details?id=com.Guilhermo.SaveThePlanets" target="_blank">
-	<img src="/images/google.png" class="center">
+	<img src="/images/google.png" class="center max300">
 </a>
 
 </div>
