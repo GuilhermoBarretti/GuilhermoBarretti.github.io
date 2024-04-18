@@ -2,7 +2,7 @@
 <html lang="en-us" class="m-auto dark"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <title>Guilhermo Barretti</title>
 
-<meta name="theme-color" content="" />
+<meta name="theme-color" content="#081720" />
 <meta charset="utf-8" />
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <meta name="description" content="" />
@@ -77,15 +77,15 @@
 <body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
     
     <header
-  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 justify-between"
 >
   <div>
-    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="http://localhost:1313/">Home</a>    
-    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/blog">Blog</a>
+    <a class="no-underline p-2 rounded hover:bg-[#13374d]" href="http://localhost:1313/">Home</a>    
+    <a class="no-underline p-2 rounded hover:bg-[#13374d]" href="/blog">Blog</a>
   </div>
   
   <i
-    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-indigo-300 dark:hover:text-indigo-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    class="fas fa-sun invisible theme-toggle text-blue-500 hover:text-blue-700 dark:text-indigo-300 dark:hover:text-indigo-500 cursor-pointer text-lg mr-9 sm:mr-0"
     onclick="lightDark(this)"
   ></i>
 </header>
@@ -109,83 +109,35 @@
 
     
     <main class="grow">
-<div class="prose dark:prose-invert max-w-none">
-  <h1 class="standard font-italic">
-    #Syntax</h1>
+<div class="blog prose max-w-none">
   
-  <div class="">
+  
+  <div class="blogSummary">
     <div
-      class="rounded hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 active"
+      class="rounded flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 active"
     >
-      <i
-        onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 fas fa-chevron-right rounded text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-      ></i>
+      
       <a href="/blog/markdown_syntax/"
         ><h2 class="accordion m-0">Demo Page</h2></a
       >
     </div>
     <div
-      id="panel-item-0"
-      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
+      class="overflow-hidden"
     >
       <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">November 19, 2022</p>
-<p class="mt-1 mb-0 text-sm">Reading Time: 3 minutes</p>
+
  
 
-<p class="metadata-value mt-1 mb-0 text-sm taxa taxa-container-div list-categories">
-  Categories: 
-  <a
-    class="metadata-tags hover:no-underline"
-    href="/categories/themes"
-    title="categories"
-  >
-    #themes</a>
-  
-  <a
-    class="metadata-tags hover:no-underline"
-    href="/categories/syntax"
-    title="categories"
-  >
-    #syntax</a>
-  
-</p>
 
 
 
-<p class="metadata-value mt-1 mb-0 text-sm taxa taxa-container-div list-tags">
-  Tags: 
-  <a
-    class="metadata-tags hover:no-underline"
-    href="/tags/markdown"
-    title="tags"
-  >
-    #markdown</a>
-  
-  <a
-    class="metadata-tags hover:no-underline"
-    href="/tags/css"
-    title="tags"
-  >
-    #css</a>
-  
-  <a
-    class="metadata-tags hover:no-underline"
-    href="/tags/html"
-    title="tags"
-  >
-    #html</a>
-  
-  <a
-    class="metadata-tags hover:no-underline"
-    href="/tags/themes"
-    title="tags"
-  >
-    #themes</a>
-  
-</p>
 
 
+
+
+
+
+<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
 </div>
     </div>
   </div>
@@ -198,20 +150,7 @@
 
     </main>
     
-    <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  py-6 ">
-  <p class="markdownify"></p>
-  <p >
-    <i>
-      <a href="https://github.com/darshanbaral/aafu">
-        aafu
-      </a>
-    </i>
-    by
-    <a href="https://www.darshanbaral.com/">
-      darshan
-    </a>
-  </p>
-</footer>
+    
 
     
   </body>

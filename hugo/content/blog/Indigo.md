@@ -10,6 +10,10 @@ categories = [
     "indigo",
 ]
 +++
+
+A intenção deste primeiro post é mostrar qual é a ideia do jogo Indigo, qual o estado do desenvolvimento dele, e para onde ele irá.
+Indigo é o jogo de plataforma 2D com criação de fases que estou fazendo usando C++, OpenGL e SDL.
+No momento, o foco do desenvolvimento está em implementar funcionalidades da *engine*. As seguintes funcionalidades já estão implementadas até agora: editor de fases (colocar/apagar *sprites*, copiar, colar, operações em área, voltar ações, redimensionar o tamanho do *level*), física, colisões, *frame cap*, suporte para *mods* utilizando *scripts* Lua, sistema de *replay*, *texture atlas*. Terminando as funcionalidades básicas o foco será no *game design* e *level design*.
 <!--more-->
 
 # Indigo

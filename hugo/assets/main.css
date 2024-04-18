@@ -95,6 +95,23 @@ h1 {
 	margin: 0px 10px 20px 10px;
 }
 
+.blog {
+	@apply rounded-lg p-6 text-white;
+	box-shadow: inset 3px 3px 6px #000000, inset -6px -6px 12px #0e293a;
+	background-color: #0f2c3d;
+	/* background-color: #123549; */
+	margin: 0px 10px 20px 10px;
+}
+
+.blogSummary {
+	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #0e293a;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #123549;
+	/* border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #13374d; */
+}
+
 /* .paccordion { */
 	/* @apply hover:nm-dark;  */
 /* } */
