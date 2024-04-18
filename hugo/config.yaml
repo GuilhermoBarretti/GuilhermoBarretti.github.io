@@ -154,11 +154,11 @@ params:
     # icon: fas fa-project-diagram
     list:
       - title: Granola Jumps
-        url: "https://guilhermo.games/granolajumps"
+        url: "/granolajumps"
         description: A 2D casual mobile game where you do shell jumps. Available on iOS and Android.
         imageIcon: GranolaJumps.png
       - title: "Save The Planets: Meteor Storm"
-        url: "https://guilhermo.games/savetheplanets"
+        url: "/savetheplanets"
         description: An arcade mobile game where you protect the planet from waves of meteors. Available on iOS and Android.
         imageIcon: STP.png
       - title: Indigo (In development)
