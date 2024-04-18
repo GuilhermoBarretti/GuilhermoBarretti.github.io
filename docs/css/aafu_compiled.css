@@ -1826,6 +1826,7 @@ p.tags:hover,p
   margin-bottom: 20px;
 }
 
+.blogSummary iframe,
 .content iframe {
   max-width: 100%;
 }

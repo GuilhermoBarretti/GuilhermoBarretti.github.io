@@ -7,3 +7,4 @@ hugo server -disableFastRender
 TODO:
 
 - i18n translation
+- accordion hover background

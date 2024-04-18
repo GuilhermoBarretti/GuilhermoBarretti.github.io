@@ -206,6 +206,7 @@ h1 {
 	margin-bottom: 20px;
 }
 
+.blogSummary iframe,
 .content iframe {
 	max-width: 100%;
 }
