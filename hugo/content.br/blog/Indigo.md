@@ -99,4 +99,4 @@ Após terminar as funcionalidades básicas da *engine*, o foco será voltado par
 
 Futuramente, farei mais posts sobre assuntos específicos do desenvolvimento dele, como física, colisões, replay, *slopes*, *scripts* Lua, *texture atlas*, e muito mais.
 
-Você pode acompanhar mais sobre o desenvolvimento do jogo me seguindo aqui no [Medium](https://guiks.medium.com/), no [Twitter](https://twitter.com/guilhermodsb), na minha página no [Itch.io](https://guiks.itch.io/) e na [Twitch](https://twitch.tv/guiks7).
+Você pode acompanhar mais sobre o desenvolvimento do jogo me seguindo no [Medium](https://guiks.medium.com/), no [Twitter](https://twitter.com/guilhermodsb), na minha página no [Itch.io](https://guiks.itch.io/) e na [Twitch](https://twitch.tv/guiks7).

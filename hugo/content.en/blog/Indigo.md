@@ -15,90 +15,88 @@ showthedate = true
 
 <!-- # Indigo -->
 
-[To be translated]
-
 <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/ys2Y0pNRqJ8" frameborder="0" allowfullscreen></iframe>
-<figcaption>Exemplo de uma fase desafiadora para testar as mecânicas do jogo</figcaption>
+<figcaption>Example of a challenging level to test the game mechanics</figcaption>
 
-A intenção deste primeiro post é mostrar qual é a ideia do jogo Indigo, qual o estado do desenvolvimento dele, e para onde ele irá.
+The goal of this first post is to show what the idea of the game Indigo is, its current development state and where it is heading to.
 
-Indigo é o jogo de plataforma 2D com criação de fases que estou fazendo usando C++, OpenGL e SDL.
+Indigo is a 2D platform game with level creation that I am developing using C++, OpenGL and SDL.
 <!--more-->
 
-No momento, o foco do desenvolvimento está em implementar funcionalidades da *engine*. As seguintes funcionalidades já estão implementadas até agora: editor de fases (colocar/apagar *sprites*, copiar, colar, operações em área, voltar ações, redimensionar o tamanho do *level*), física, colisões, *frame cap*, suporte para *mods* utilizando *scripts* Lua, sistema de *replay*, *texture atlas*. Terminando as funcionalidades básicas o foco será no *game design* e *level design*.
+At the moment, the focus of the development is to implement engine functionalities. The following functionalities are already implemented so far: level editor (insert/erase sprites, copy, paste, area operations, undo, resize level size), physics, collisions, frame cap, mod support through Lua scripts, replay system and texture atlas. As soon as I finish its basic functionalities, the focus will be on game design and level design.
 
-## Por que não usar uma engine?
+## Why not use an engine?
 
 <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/VSUr1eoMr9c" frameborder="0" allowfullscreen></iframe>
 
-Eu já venho brincando com SDL há um bom tempo e gosto da ideia de ter controle de tudo (ou boa parte) que acontece no meu código. Sempre tive a curiosidade de saber como as coisas funcionam em níveis mais baixo e gosto de mexer com isso.
+I have been playing around with SDL for a long time, and I like the idea of having everything (or most of it) that happens with my code under control. I have always had the curiosity of knowing how things work in lower levels, and I like to play with that.
 
-Creio que eu não teria capacidade ou tempo de fazer isso se o jogo fosse mais complexo, tivesse gráficos 3D ou fosse *multiplayer* por exemplo, mas para as intenções que tenho para esse jogo é totalmente possível fazer do "zero" e sozinho.
+I believe I would not be able (or have time) to do this if the game were more complex, had 3D graphics or were multiplayer for example, but, for the intentions that I have for this game, it is totally possible to make it "from scratch" and by yourself.
 
-Poderia fazer tudo isso numa *engine* e economizar tempo com coisas que já estão lá pronta? Poderia, mas foi justamente por querer aprender algo como OpenGL e mexer em coisas em mais baixo nível que eu comecei a fazer esse jogo. É algo que gosto muito de fazer e me anima. O jogo deve ser feito no ambiente que melhor te agrada, usando *engine* ou não, sabendo das vantagens de desvantagens que cada um oferece, e, para mim, fazer minha própria *engine* foi o que mais me agradou.
+Could I do all of this in an engine and save time with things that are already ready there? I could, but it was precisely due to the desire to learn something with OpenGL and mess around with lower-level stuff that I started making this game. It is something that I like to do and even excites me. Games must be made in the environment that pleases you the most, whether you are using an engine or not, and, to me, making my own engine was what pleased me the most.
 
-Usando uma *engine* pronta, você economiza bastante tempo com funcionalidades que ela te oferece. Porém, isso pode vir com a desvantagem de que ela é feita para propósito geral, atendendo às múltiplas funcionalidades que nem sempre é direto ao ponto para algo específico e simples que você quer. Fazendo minha própria *engine*, o código é focado em apenas nas coisas que preciso para o meu jogo e pensado no *workflow* que mais me satisfaz.
+By using an engine, you save a lot of time with the functionalities that it offers you. However, this may have the disadvantage of being made for general purposes, meeting multiple functionalities that are not always straight to the point for something specific and simple that you want. By creating my own engine, the code is focused only on the things I need for my game and designed with the workflow that satisfies me most.
 
-Cada um utiliza o ambiente e ferramentas que mais lhe deixa confortável para desenvolver e, para mim, essa foi a forma que mais me agradou para fazer este jogo.
+You should use the environment and tools that make you comfortable to develop, and, to me, this was the way that pleased me the most to make this game.
 
-Contudo, não estou fazendo exatamente tudo do "zero", por isso o uso das aspas. Estou utilizando algumas *libraries* que ajudam bastante e são muito boas. A seguir, vou falar um pouco de cada uma que escolhi usar para ajudar a fazer minha *engine*.
+However, I am not exactly making everything "from scratch", hence the quotation marks. I am using some libraries that help a lot and are really good. Next, I am going to go over each one of what I have chosen to use to help and make my engine.
 
 ## SDL
 
 ![](https://cdn-images-1.medium.com/max/2000/0*EOcCgyVqaajcBq-G.png)
 
-*Simple DirectMedia Layer* é uma *library open source* que fornece acesso ao teclado, mouse, áudio, controles, e a gráficos através do OpenGL. Ela tem suporte oficial para as principais plataformas como Windows, Mac, Linux, Android, iOS e outras plataformas também são suportadas através da ajuda da comunidade. Com isso, foi muito fácil compilar Indigo para Windows, Mac e Android sem muitos obstáculos. Além disso, pequenas e grandes empresas de jogos utilizam o SDL e [até financiam o desenvolvimento dessa *library*](https://www.patreon.com/posts/58563886). Há outras *libraries* parecidas como SFML, raylib, Allegro, mas acredito que a SDL é a mais utilizada e está melhor desenvolvida.
+*Simple DirectMedia Layer* is an open-source library that provides access to keyboard, mouse, audio, controllers and graphics through OpenGL. It has official support for the main platforms, such as Windows, Mac, Linux, Android, iOS and other ones are also supported through the help of the community. Because of that, it was very easy to compile Indigo for Windows, Mac and Android with no hassle. Also, small and big game companies use SDL and [even support its development financially](https://www.patreon.com/posts/58563886). There are other similar libraries like SFML, raylib and Allegro, but I believe SDL is the most widely used and best developed one.
 
-Já tenho brincado com ela há um tempo; é uma ótima biblioteca, e não vejo necessidade de ter que fazer isso do zero, pelo menos para o que eu quero, pois tem todas as funcionalidades básicas para você começar sua *engine*. Criar uma janela no Windows pode até não ser tão difícil, porém fazer isso e muitas outras funcionalidades para cada plataforma que você quer que seu jogo rode já é algo muito mais trabalhoso, pois cada plataforma tem um jeito diferente de fazer. Ela cuida muito bem dessas funções (criar janelas, pegar input do teclado/mouse/controle), o desenvolvimento é bem ativo e boa parte da indústria utiliza. Por esses fatores, eu escolhi utilizar essa *library*.
+I have been playing around with it for a while; it is a great library, and I don't see any reason to have to make it from scratch, at least not for what I want, because it has all the basic functionalities for you to start making your engine. Creating a window on Windows might even not be that hard, but doing this and many other functionalities for each platform you want your game to run on is far more demanding, since each platform has its own way of dealing with them. It handles those functions very well (creating windows and managing keyboard/mouse/controller input), its development is very active and it has a lot of relevance in the industry. That is why I have chosen to use this library.
 
 ## **Dear ImGui**
 
-![A utilização de Dear ImGui no Indigo](https://cdn-images-1.medium.com/max/2784/1*FEprVgJZtc8kkk8ii8uwDA.png)
-<figcaption>A utilização de Dear ImGui no Indigo</figcaption>
+![Utilizing Dear ImGui in Indigo](https://cdn-images-1.medium.com/max/2784/1*FEprVgJZtc8kkk8ii8uwDA.png)
+<figcaption>Utilizing Dear ImGui in Indigo</figcaption>
 
-Uma outra *library* que tem me ajudado bastante é a [*Dear ImGui*](https://github.com/ocornut/imgui), que é uma *library* para renderizar GUI (Graphical User Interface) de uma maneira muito fácil. Isso me ajuda a criar varias janelas para menus para alterar configurações da *engine*, dos objetos, gravidade, velocidade, mensurar o FPS, ou qualquer outra coisa que eu queira ter acesso fácil e visual dentro do jogo.
+Another library that has been helping me a lot is [Dear ImGui](https://github.com/ocornut/imgui), which is a library for rendering GUI (Graphical User Interface) in a very easy way. This helps me create many windows for menus to change all engine, object, gravity and speed settings, measure FPS or anything else that I would like to have easy and visual access to in the game.
 
-Gostei muito dela pois foi muito fácil integrar ao meu código e começar a criar a interface do jeitinho que quero.
+I liked it a lot because it was rather easy to integrate with my code and begin to create the interface the exact way that I wanted.
 
-Toda a documentação desta *library* está em um código com exemplo de todas as funcionalidades dela. Quer saber como criar um *combo box*? Tem um exemplo no código utilizando ela de forma simples e fácil de entender!
+All the documentation for this library is in a code with examples for every single functionality of it. Would you like to create a combo box? There is an example in the code using it in a simple and easy way to understand!
 
-Perdi um bom tempo só brincando com as funcionalidades, testando o que é possível criar com ela e [até vendo o que os outros conseguem fazer com ela](https://github.com/ocornut/imgui/issues/4451). Recomendo muito!
+I have spent a good amount of time just playing around with its functionalities, testing what is possible to create with it and [even taking a look at what other people can do with it](https://github.com/ocornut/imgui/issues/4451). I highly recommend it!
 
 ## Cereal
 
 ![](https://cdn-images-1.medium.com/max/2000/0*7-t0Vu2c0aQHJi-n.png)
 
-O jogo precisa salvar todas as informações em arquivos. Informações das configurações da *engine*, dos *levels*, dos objetos e muitas outras coisas. Para isso eu decidi utilizar [Cereal](https://uscilab.github.io/cereal/), que é uma *library header-only* em C++ para serializar dados em vários formatos diferentes como XML, JSON ou binário. Estou gostando bastante dela, pois é muito fácil de utilizar e faz muito bem o trabalho de salvar os dados. A única coisa que não gostei tanto foi que o tempo de compilação das partes do código que utiliza ela aumenta bastante.
+The game needs to save all information in files. Information about the engine, level and object settings, among many others. For this, I decided to use [Cereal](https://uscilab.github.io/cereal/), which is a header-only library in C++ for serializing data in many different formats, such as XML, JSON or binary. I like it a lot because it is easy to use and great at saving data. The only thing that I did not like that much was that the compile time for parts of the code that uses Cereal increases quite a bit.
 
-Não estava nem um pouco afim de criar meu *serializer* e achei essa *library* e gostei bastante.
+I was not in the mood to make my own serializer, so I found this library and liked it a lot.
 
 ## **Lua scripts**
 
-![Exemplo de um script Lua para um objeto (Shell/Casco)](https://cdn-images-1.medium.com/max/2000/1*XkdvAJ-a2sUsT-0CM_A7rQ.png)
-<figcaption>Exemplo de um script Lua para um objeto (Shell/Casco)</figcaption>
+![Example of a Lua script for an object (Shell)](https://cdn-images-1.medium.com/max/2000/1*XkdvAJ-a2sUsT-0CM_A7rQ.png)
+<figcaption>Example of a Lua script for an object (Shell)</figcaption>
 
-A criação de fases não será limitada apenas aos *game objects* oficiais do jogo; será possível criar *game objects* customizados utilizando scripts Lua. Isso facilitará muito a criação de *mods* para o jogo. Com ele, é possível ter controle de tudo que o objeto faz, como ele reage a colisões, criar a própria física dele (ou usar o padrão), alterar os sprites/animações, instanciar novos objetos, etc. Há infinitas possibilidades de criações.
+Level creation will not be only limited to the official game objects; it will be possible to create custom game objects utilizing Lua scripts. This will make it easier to create mods for the game. With it, it is possible to have control of everything that the object does, how it reacts to collisions, create its own physics (or use the default one), change sprites and animations, instance new objects, etc. There are endless possibilities for creations.
 
-Explicando de forma bem rápida, Lua é uma linguagem de programação interpretada desenvolvida aqui no Brasil na PUC-Rio. É uma linguagem muito leve e fácil de "embbedar" no seu código. Seu código compilado (aquilo que você precisa "embeddar" na sua aplicação) tem por volta de 400 KB apenas! É uma linguagem muito rápida comparada às outras interpretadas como Javascript ou Python por exemplo. E é interpretada, ou seja, todo código é compilado em tempo de execução e roda de forma contida dentro de sua *Virtual Machine*, trazendo mais segurança para os scripts que você rodar de outras pessoas. Não é à toa que essa é uma linguagem amplamente usada para *mods* de jogos.
+In a nutshell, Lua is an interpreted programming language developed here in Brazil at PUC-Rio. It is a rather lightweight language and is easy to embed into your code. Its compiled code (what you need to embed in your application) has around 400 KB only! It is a fast language compared to other interpreted ones like Javascript or Python, for example. It is interpreted, that is, the entire code is compiled in execution time and runs in a contained way in its Virtual Machine, bringing more security to the scripts from other people you might run. It is not a coincidence that this is a widely used language for game mods.
 
 ## **Slopes**
 
 ![](https://cdn-images-1.medium.com/max/2784/1*EGpWNDg8juYHb1n4DmoeVg.png)
 
-A implementação mais recente do jogo foi *slopes* (rampas)! Há duas intensidades de inclinações. Olhando a captura de tela, a rampa à esquerda do personagem é mais leve e à direita mais íngrime. Futuramente, irei fazer um post detalhado sobre essa implementação!
+The latest game implementation was the slopes! There are two intensities of slopes. Looking at the screenshot, the ramp on the left of the character is less intense and, on the right, steeper. In the future, I will write an in-depth post about this implementation!
 
-## O que Indigo é no momento e para onde vai
+## What Indigo is at the moment and where it is heading to
 
 ![](https://cdn-images-1.medium.com/max/2000/1*i0PIhTPxYgWOvPdKSY3zEQ.png)
-> Indigo é uma cor entre o azul e o violeta. É a cor da devoção, sabedoria, justiça e conhecimento. Atrelada à intuição e o que não é visto, é também considerada uma cor espiritual.
-> Como muitas cores, indigo recebe o nome de objeto do mundo natural — a planta nomeada indigo utilizada para tingir roupas.
+> Indigo is a color between blue and violet. It is a color of devotion, wisdom, justice, and knowledge. Tied to intuition and what is not seen, it is also considered spiritual.
+> Like many colors, indigo gets its name from an object in the natural world - the plant named indigo once used for dyeing cloth.
 
-No momento, Indigo é um editor de fases que possuí alguns objetos como casco, *on/off switch*, espinhos, trampolim, canhão, cordas, etc. É possível criar/salvar/jogar fases, tem um sistema de *replay* das fases que você jogou, toda física/detecção de colisões foram feitas do zero, e é possível criar novos objetos utilizando scripts Lua. Com o personagem, é possível dar *dash*, *wall slide*, segurar e jogar objetos.
+At the moment, Indigo is a level editor with some objects like shell, on/off switch, spikes, trampoline, canons, ropes, etc. It is possible to create/save/play levels, it has a replay system for the levels you played, all the physics and collision detection were made from scratch and it is possible to create new objects using Lua scripts. It is also possible to dash, wallslide, hold and throw objects with your character.
 
-A ideia do jogo pronto é ser um jogo de plataforma 2D desafiador, com bastante fases e apenas um pouquinho de história. O editor de fases será liberado para os jogadores/jogadoras criarem e compartilharem suas próprias fases, tendo amplo suporte para *mods* através de scripts Lua. Acredito estar um pouco longe disso, mas vamos vendo como o jogo vai se moldando até lá.
+The idea of the game is to be a challenging, 2D platform game, with many levels and just a bit of background story. The level editor will be available for all players to create and share their own levels, and it will have wide support for mods through Lua scripts. I believe I am a bit far from that, but let's see how the game shapes up by then.
 
-Após terminar as funcionalidades básicas da *engine*, o foco será voltado para o *game design* e *level design*. É uma área que também gosto muito mas tenho muito a aprender ainda.
+After finishing its basic functionalities, the focus will be on game design and level design. It's an area that I also really enjoy but I still have a lot to learn.
 
-Futuramente, farei mais posts sobre assuntos específicos do desenvolvimento dele, como física, colisões, replay, *slopes*, *scripts* Lua, *texture atlas*, e muito mais.
+In the future, I will write more posts about specific topics regarding its development, like physics, collisions, replay, slopes, Lua scripts, texture atlas and many more.
 
-Você pode acompanhar mais sobre o desenvolvimento do jogo me seguindo aqui no [Medium](https://guiks.medium.com/), no [Twitter](https://twitter.com/guilhermodsb), na minha página no [Itch.io](https://guiks.itch.io/) e na [Twitch](https://twitch.tv/guiks7).
+You can follow more about the development of this game by following me on [Medium](https://guiks.medium.com/), no [Twitter](https://twitter.com/guilhermodsb), on my [Itch.io](https://guiks.itch.io/) page and on [Twitch](https://twitch.tv/guiks7).
