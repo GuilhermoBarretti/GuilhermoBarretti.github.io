@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="m-auto dark"><head>
+  <title>Guilhermo Barretti</title>
+
+<meta name="theme-color" content="#081720" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.124.1" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="shortcut icon" href="/Icon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+
+
+
+
+
+<link href="/main.min.d3cc24df52242d9a9583773aa03f5a8b76fa2db7773e210def4ab7f714509c37.css" rel="stylesheet" />
+
+
+  
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 justify-between">
+	<div>
+		<a class="no-underline p-2 rounded hover:bg-[#13374d]" href='/pt-br/'>Início</a>
+		<a class="no-underline p-2 rounded hover:bg-[#13374d]" href='/pt-br/blog'>Blog</a>
+	</div>
+	
+	<i class="invisible theme-toggle text-blue-500 hover:text-blue-700"
+		onclick="lightDark(this)"></i>
+
+	<div class="languages">
+		
+		
+			<a class='' title="en" lang="en" hreflang="en" href="https://guilhermo.games/blog/"> English</a>
+			 | 
+		
+			<a class=' selectedLang ' title="pt-br" lang="pt-br" hreflang="pt-br" href="https://guilhermo.games/pt-br/blog/"> Português</a>
+			
+		
+	</div>
+
+	
+
+	
+	
+	
+
+	
+
+</header>
+
+<script>
+	const lightDark = (el) => {
+		let html = document.querySelector("html");
+		if (html.classList.contains("dark")) {
+			html.classList.remove("dark");
+			el.classList.add("fa-moon");
+			el.classList.remove("fa-sun");
+			window.localStorage.setItem("theme", "light");
+		} else {
+			html.classList.add("dark");
+			el.classList.add("fa-sun");
+			el.classList.remove("fa-moon");
+			window.localStorage.setItem("theme", "dark");
+		}
+	};
+</script>
+    
+    <main class="grow">
+<div class="blog prose max-w-none">
+  
+  
+  <div class="blogSummary">
+    <div
+      class="rounded flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 active"
+    >
+      
+      <a href="/pt-br/blog/indigo/"
+        ><h2 class="accordion m-0">Indigo</h2></a
+      >
+    </div>
+    <div
+      class="overflow-hidden"
+    >
+      <div class="metadata p-2"><p class="mt-0 mb-2 text-sm text-right">December 30, 2021</p>
+
+ 
+
+
+
+
+
+
+
+
+
+
+<!-- # Indigo -->
+<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/ys2Y0pNRqJ8" frameborder="0" allowfullscreen></iframe>
+<figcaption>Exemplo de uma fase desafiadora para testar as mecânicas do jogo</figcaption>
+<p>A intenção deste primeiro post é mostrar qual é a ideia do jogo Indigo, qual o estado do desenvolvimento dele, e para onde ele irá.</p>
+<p>Indigo é o jogo de plataforma 2D com criação de fases que estou fazendo usando C++, OpenGL e SDL.</p>
+
+<a href="https://guilhermo.games/pt-br/blog/indigo/" class="post-read-more">[ Ler mais ]</a></div>
+    </div>
+  </div>
+  
+</div>
+<script src="/js/accordion.js"></script>
+<div class="mt-4 d-flex justify-content-center">
+  
+</div>
+
+    </main>
+    
+    
+
+    
+  </body>
+</html>

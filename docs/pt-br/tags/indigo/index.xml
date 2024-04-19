@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Indigo on </title>
+    <link>https://guilhermo.games/pt-br/tags/indigo/</link>
+    <description>Recent content in Indigo on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 30 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://guilhermo.games/pt-br/tags/indigo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Indigo</title>
+      <link>https://guilhermo.games/pt-br/blog/indigo/</link>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://guilhermo.games/pt-br/blog/indigo/</guid>
+      <description>&lt;!-- # Indigo --&gt;&#xD;&#xA;&lt;iframe class=&#34;center&#34; width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ys2Y0pNRqJ8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xD;&#xA;&lt;figcaption&gt;Exemplo de uma fase desafiadora para testar as mecânicas do jogo&lt;/figcaption&gt;&#xD;&#xA;&lt;p&gt;A intenção deste primeiro post é mostrar qual é a ideia do jogo Indigo, qual o estado do desenvolvimento dele, e para onde ele irá.&lt;/p&gt;&#xA;&lt;p&gt;Indigo é o jogo de plataforma 2D com criação de fases que estou fazendo usando C++, OpenGL e SDL.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

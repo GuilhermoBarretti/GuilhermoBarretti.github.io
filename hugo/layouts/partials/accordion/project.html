@@ -5,10 +5,9 @@
 	</div>
 	<div class="textProject" style="float: right; padding-left: 20px; padding-top: 10px;">
 		<h4>
-			<!-- <a href="{{ .url }}" target="_blank">{{- .title -}}</a> -->
-			<a href="{{ .url }}">{{- .title -}}</a>
+			<a href="{{ relLangURL .url }}">{{- i18n .title -}}</a>
 		</h4>
-		<p class="markdownify">{{- .description | markdownify -}}</p>
+		<p class="markdownify">{{- i18n .description | markdownify -}}</p>
 	</div>
 </div>
 {{ end }}

@@ -1,30 +1,65 @@
-<header
-  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 justify-between"
->
-  <div>
-    <a class="no-underline p-2 rounded hover:bg-[#13374d]" href="{{ .Site.BaseURL }}">Home</a>    
-    <a class="no-underline p-2 rounded hover:bg-[#13374d]" href="{{ `blog` | relURL }}">Blog</a>
-  </div>
-  
-  <i
-    class="fas fa-sun invisible theme-toggle text-blue-500 hover:text-blue-700 dark:text-indigo-300 dark:hover:text-indigo-500 cursor-pointer text-lg mr-9 sm:mr-0"
-    onclick="lightDark(this)"
-  ></i>
+<header class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 justify-between">
+	<div>
+		<a class="no-underline p-2 rounded hover:bg-[#13374d]" href='{{ relLangURL "" }}'>{{ i18n "Home" }}</a>
+		<a class="no-underline p-2 rounded hover:bg-[#13374d]" href='{{ relLangURL "blog" }}'>Blog</a>
+	</div>
+	
+	<i class="invisible theme-toggle text-blue-500 hover:text-blue-700"
+		onclick="lightDark(this)"></i>
+
+	<div class="languages">
+		<!-- {{ $list := ($.AllTranslations) }} -->
+		{{ range $i, $e := $.AllTranslations }}
+			<a class='{{if eq .Lang $.Lang}} selectedLang {{end}}' title="{{ .Lang }}" lang="{{ .Lang }}" hreflang="{{ .Lang }}" href="{{ .Permalink }}"> {{ .Language.LanguageName }}</a>
+			{{ if not $i }} | {{ end }}
+		{{ end }}
+	</div>
+
+	<!-- <div id="language">
+		{{ range $.AllTranslations }}
+			<a class='{{if eq .Lang $.Lang}} selectedLang {{end}}' title="{{ .Lang }}" lang="{{ .Lang }}" hreflang="{{ .Lang }}" href="{{ .Permalink }}"> {{ .Language.LanguageName }} </a> |
+		{{ end }}
+	</div> -->
+
+	<!-- <div id="language">
+		{{ range site.Home.Translations }}
+		<a class="{{ .Lang }}" title="{{ .Lang }}" lang="{{ .Lang }}" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+			{{ .Lang }}
+		</a>
+		{{ end }}
+	</div> -->
+	
+	<!-- <div id="language">
+		{{- if .IsTranslated -}}
+			{{ range .Translations }}
+				<a class="{{ .Lang }}" title="{{ .Lang }}" lang="{{ .Lang }}" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+					{{ i18n "siteIn" }} {{ .Language.LanguageName }}
+				</a>
+			{{- end -}}
+		{{ end }}
+	</div> -->
+
+	<!-- <div style="text-align: right; margin-right: 0px;">
+		{{ range $.Site.Home.AllTranslations }}
+		<a href="{{ .Permalink }}" {{ if eq .Lang $.Lang }} class="current-language" {{ end }}>{{ .Language.LanguageName }}</a> |
+		{{ end }}
+	</div> -->
+
 </header>
 
 <script>
-  const lightDark = (el) => {
-    let html = document.querySelector("html");
-    if (html.classList.contains("dark")) {
-      html.classList.remove("dark");
-      el.classList.add("fa-moon");
-      el.classList.remove("fa-sun");
-      window.localStorage.setItem("theme", "light");
-    } else {
-      html.classList.add("dark");
-      el.classList.add("fa-sun");
-      el.classList.remove("fa-moon");
-      window.localStorage.setItem("theme", "dark");
-    }
-  };
+	const lightDark = (el) => {
+		let html = document.querySelector("html");
+		if (html.classList.contains("dark")) {
+			html.classList.remove("dark");
+			el.classList.add("fa-moon");
+			el.classList.remove("fa-sun");
+			window.localStorage.setItem("theme", "light");
+		} else {
+			html.classList.add("dark");
+			el.classList.add("fa-sun");
+			el.classList.remove("fa-moon");
+			window.localStorage.setItem("theme", "dark");
+		}
+	};
 </script>

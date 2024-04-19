@@ -1,0 +1,72 @@
+- id: Home
+  translation: Início
+
+- id: Search
+  translation: Buscar
+
+- id: Edit this page
+  translation: Editar página
+
+- id: Last modified by
+  translation: Última modificação por
+
+- id: Expand
+  translation: Expandir
+
+- id: bookSearchConfig
+  translation: '{ cache: true }'
+
+- id: readMore
+  translation: Ler mais
+
+- id: siteIn
+  translation: Site in 
+
+# Accordion
+
+- id: "About Me"
+  translation: Sobre Mim
+
+- id: "My Games"
+  translation: Meus Jogos
+
+- id: "Education"
+  translation: Educação
+
+- id: "Skills"
+  translation: Habilidades
+
+# Accordion descriptions
+
+# About Me
+- id: aboutMeDesc
+  translation: "Olá, meu nome é **Guilhermo Barretti** e sou **desenvolvedor de jogos**. Tenho dois jogos lançados para celular usando **Unity**. Estou também fazendo uma **engine** própria usando **C++**, **SDL**, **OpenGL** e **Lua**."
+
+# Education
+- id: Computer Science
+  translation: Ciência da Computação
+
+- id: dateUfscar
+  translation: 2012 - 2016 [Incompleto]
+
+- id: dateUAM
+  translation: 2020 - presente
+
+# My Games
+- id: titleGranolaJumps
+  translation: Granola Jumps
+  
+- id: titleSTP
+  translation: "Save The Planets: Meteor Storm"
+
+- id: titleIndigo
+  translation: Indigo (Em desenvolvimento)
+
+- id: descGranolaJumps
+  translation: Um jogo mobile casual 2D onde você faz pulos com a casca de ovo. Disponível para iOS e Android.
+  
+- id: descSTP
+  translation: Um jogo arcade mobile onde você protegeo planeta de ondas de meteoros. Disponível para iOS e Android.
+
+- id: descIndigo
+  translation: Um jogo de plataforma 2D com ferramentas de edição de level e mods personalizados usando Lua script. Feito usando C++, SDL, OpenGL e Lua.

@@ -226,3 +226,15 @@ figcaption {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
+
+.selectedLang {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	color: #b8b8b8;
+}
+
+.languages {
+	margin-left: auto; 
+	margin-right: 0;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us" class="m-auto dark"><head>
+<html lang="en" class="m-auto dark"><head>
   <title>Guilhermo Barretti</title>
 
 <meta name="theme-color" content="#081720" />
@@ -31,7 +31,7 @@
 
 
 
-<link href="/main.min.adf8fb34e41c252a5ac1c990a5e0325759f0d64ca2a3706f75624b523ee31786.css" rel="stylesheet" />
+<link href="/main.min.d3cc24df52242d9a9583773aa03f5a8b76fa2db7773e210def4ab7f714509c37.css" rel="stylesheet" />
 
 
   
@@ -78,37 +78,52 @@
 </head>
 <body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
     
-    <header
-  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 justify-between"
->
-  <div>
-    <a class="no-underline p-2 rounded hover:bg-[#13374d]" href="https://guilhermo.games/">Home</a>    
-    <a class="no-underline p-2 rounded hover:bg-[#13374d]" href="/blog">Blog</a>
-  </div>
-  
-  <i
-    class="fas fa-sun invisible theme-toggle text-blue-500 hover:text-blue-700 dark:text-indigo-300 dark:hover:text-indigo-500 cursor-pointer text-lg mr-9 sm:mr-0"
-    onclick="lightDark(this)"
-  ></i>
+    <header class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 justify-between">
+	<div>
+		<a class="no-underline p-2 rounded hover:bg-[#13374d]" href='/'>Home</a>
+		<a class="no-underline p-2 rounded hover:bg-[#13374d]" href='/blog'>Blog</a>
+	</div>
+	
+	<i class="invisible theme-toggle text-blue-500 hover:text-blue-700"
+		onclick="lightDark(this)"></i>
+
+	<div class="languages">
+		
+		
+			<a class=' selectedLang ' title="en" lang="en" hreflang="en" href="https://guilhermo.games/blog/indigo/"> English</a>
+			 | 
+		
+			<a class='' title="pt-br" lang="pt-br" hreflang="pt-br" href="https://guilhermo.games/pt-br/blog/indigo/"> Português</a>
+			
+		
+	</div>
+
+	
+
+	
+	
+	
+
+	
+
 </header>
 
 <script>
-  const lightDark = (el) => {
-    let html = document.querySelector("html");
-    if (html.classList.contains("dark")) {
-      html.classList.remove("dark");
-      el.classList.add("fa-moon");
-      el.classList.remove("fa-sun");
-      window.localStorage.setItem("theme", "light");
-    } else {
-      html.classList.add("dark");
-      el.classList.add("fa-sun");
-      el.classList.remove("fa-moon");
-      window.localStorage.setItem("theme", "dark");
-    }
-  };
+	const lightDark = (el) => {
+		let html = document.querySelector("html");
+		if (html.classList.contains("dark")) {
+			html.classList.remove("dark");
+			el.classList.add("fa-moon");
+			el.classList.remove("fa-sun");
+			window.localStorage.setItem("theme", "light");
+		} else {
+			html.classList.add("dark");
+			el.classList.add("fa-sun");
+			el.classList.remove("fa-moon");
+			window.localStorage.setItem("theme", "dark");
+		}
+	};
 </script>
-
     
     <main class="grow">
 <div class="contentPage prose ">
@@ -121,6 +136,7 @@
 </div>
 <div class="content">
   <!-- # Indigo -->
+<p>[To be translated]</p>
 <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/ys2Y0pNRqJ8" frameborder="0" allowfullscreen></iframe>
 <figcaption>Exemplo de uma fase desafiadora para testar as mecânicas do jogo</figcaption>
 <p>A intenção deste primeiro post é mostrar qual é a ideia do jogo Indigo, qual o estado do desenvolvimento dele, e para onde ele irá.</p>
@@ -135,30 +151,30 @@
 <p>Cada um utiliza o ambiente e ferramentas que mais lhe deixa confortável para desenvolver e, para mim, essa foi a forma que mais me agradou para fazer este jogo.</p>
 <p>Contudo, não estou fazendo exatamente tudo do &ldquo;zero&rdquo;, por isso o uso das aspas. Estou utilizando algumas <em>libraries</em> que ajudam bastante e são muito boas. A seguir, vou falar um pouco de cada uma que escolhi usar para ajudar a fazer minha <em>engine</em>.</p>
 <h2 id="sdl">SDL</h2>
-<p><img src="https://cdn-images-1.medium.com/max/2000/0*EOcCgyVqaajcBq-G.png" alt=""></p>
+<p><img src="https://cdn-images-1.medium.com/max/2000/0*EOcCgyVqaajcBq-G.png"></p>
 <p><em>Simple DirectMedia Layer</em> é uma <em>library open source</em> que fornece acesso ao teclado, mouse, áudio, controles, e a gráficos através do OpenGL. Ela tem suporte oficial para as principais plataformas como Windows, Mac, Linux, Android, iOS e outras plataformas também são suportadas através da ajuda da comunidade. Com isso, foi muito fácil compilar Indigo para Windows, Mac e Android sem muitos obstáculos. Além disso, pequenas e grandes empresas de jogos utilizam o SDL e <a href="https://www.patreon.com/posts/58563886">até financiam o desenvolvimento dessa <em>library</em></a>. Há outras <em>libraries</em> parecidas como SFML, raylib, Allegro, mas acredito que a SDL é a mais utilizada e está melhor desenvolvida.</p>
 <p>Já tenho brincado com ela há um tempo; é uma ótima biblioteca, e não vejo necessidade de ter que fazer isso do zero, pelo menos para o que eu quero, pois tem todas as funcionalidades básicas para você começar sua <em>engine</em>. Criar uma janela no Windows pode até não ser tão difícil, porém fazer isso e muitas outras funcionalidades para cada plataforma que você quer que seu jogo rode já é algo muito mais trabalhoso, pois cada plataforma tem um jeito diferente de fazer. Ela cuida muito bem dessas funções (criar janelas, pegar input do teclado/mouse/controle), o desenvolvimento é bem ativo e boa parte da indústria utiliza. Por esses fatores, eu escolhi utilizar essa <em>library</em>.</p>
 <h2 id="dear-imgui"><strong>Dear ImGui</strong></h2>
-<p><img src="https://cdn-images-1.medium.com/max/2784/1*FEprVgJZtc8kkk8ii8uwDA.png" alt="A utilização de Dear ImGui no Indigo"></p>
+<p><img alt="A utilização de Dear ImGui no Indigo" src="https://cdn-images-1.medium.com/max/2784/1*FEprVgJZtc8kkk8ii8uwDA.png"></p>
 <figcaption>A utilização de Dear ImGui no Indigo</figcaption>
 <p>Uma outra <em>library</em> que tem me ajudado bastante é a <a href="https://github.com/ocornut/imgui"><em>Dear ImGui</em></a>, que é uma <em>library</em> para renderizar GUI (Graphical User Interface) de uma maneira muito fácil. Isso me ajuda a criar varias janelas para menus para alterar configurações da <em>engine</em>, dos objetos, gravidade, velocidade, mensurar o FPS, ou qualquer outra coisa que eu queira ter acesso fácil e visual dentro do jogo.</p>
 <p>Gostei muito dela pois foi muito fácil integrar ao meu código e começar a criar a interface do jeitinho que quero.</p>
 <p>Toda a documentação desta <em>library</em> está em um código com exemplo de todas as funcionalidades dela. Quer saber como criar um <em>combo box</em>? Tem um exemplo no código utilizando ela de forma simples e fácil de entender!</p>
 <p>Perdi um bom tempo só brincando com as funcionalidades, testando o que é possível criar com ela e <a href="https://github.com/ocornut/imgui/issues/4451">até vendo o que os outros conseguem fazer com ela</a>. Recomendo muito!</p>
 <h2 id="cereal">Cereal</h2>
-<p><img src="https://cdn-images-1.medium.com/max/2000/0*7-t0Vu2c0aQHJi-n.png" alt=""></p>
+<p><img src="https://cdn-images-1.medium.com/max/2000/0*7-t0Vu2c0aQHJi-n.png"></p>
 <p>O jogo precisa salvar todas as informações em arquivos. Informações das configurações da <em>engine</em>, dos <em>levels</em>, dos objetos e muitas outras coisas. Para isso eu decidi utilizar <a href="https://uscilab.github.io/cereal/">Cereal</a>, que é uma <em>library header-only</em> em C++ para serializar dados em vários formatos diferentes como XML, JSON ou binário. Estou gostando bastante dela, pois é muito fácil de utilizar e faz muito bem o trabalho de salvar os dados. A única coisa que não gostei tanto foi que o tempo de compilação das partes do código que utiliza ela aumenta bastante.</p>
 <p>Não estava nem um pouco afim de criar meu <em>serializer</em> e achei essa <em>library</em> e gostei bastante.</p>
 <h2 id="lua-scripts"><strong>Lua scripts</strong></h2>
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*XkdvAJ-a2sUsT-0CM_A7rQ.png" alt="Exemplo de um script Lua para um objeto (Shell/Casco)"></p>
+<p><img alt="Exemplo de um script Lua para um objeto (Shell/Casco)" src="https://cdn-images-1.medium.com/max/2000/1*XkdvAJ-a2sUsT-0CM_A7rQ.png"></p>
 <figcaption>Exemplo de um script Lua para um objeto (Shell/Casco)</figcaption>
 <p>A criação de fases não será limitada apenas aos <em>game objects</em> oficiais do jogo; será possível criar <em>game objects</em> customizados utilizando scripts Lua. Isso facilitará muito a criação de <em>mods</em> para o jogo. Com ele, é possível ter controle de tudo que o objeto faz, como ele reage a colisões, criar a própria física dele (ou usar o padrão), alterar os sprites/animações, instanciar novos objetos, etc. Há infinitas possibilidades de criações.</p>
 <p>Explicando de forma bem rápida, Lua é uma linguagem de programação interpretada desenvolvida aqui no Brasil na PUC-Rio. É uma linguagem muito leve e fácil de &ldquo;embbedar&rdquo; no seu código. Seu código compilado (aquilo que você precisa &ldquo;embeddar&rdquo; na sua aplicação) tem por volta de 400 KB apenas! É uma linguagem muito rápida comparada às outras interpretadas como Javascript ou Python por exemplo. E é interpretada, ou seja, todo código é compilado em tempo de execução e roda de forma contida dentro de sua <em>Virtual Machine</em>, trazendo mais segurança para os scripts que você rodar de outras pessoas. Não é à toa que essa é uma linguagem amplamente usada para <em>mods</em> de jogos.</p>
 <h2 id="slopes"><strong>Slopes</strong></h2>
-<p><img src="https://cdn-images-1.medium.com/max/2784/1*EGpWNDg8juYHb1n4DmoeVg.png" alt=""></p>
+<p><img src="https://cdn-images-1.medium.com/max/2784/1*EGpWNDg8juYHb1n4DmoeVg.png"></p>
 <p>A implementação mais recente do jogo foi <em>slopes</em> (rampas)! Há duas intensidades de inclinações. Olhando a captura de tela, a rampa à esquerda do personagem é mais leve e à direita mais íngrime. Futuramente, irei fazer um post detalhado sobre essa implementação!</p>
 <h2 id="o-que-indigo-é-no-momento-e-para-onde-vai">O que Indigo é no momento e para onde vai</h2>
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*i0PIhTPxYgWOvPdKSY3zEQ.png" alt=""></p>
+<p><img src="https://cdn-images-1.medium.com/max/2000/1*i0PIhTPxYgWOvPdKSY3zEQ.png"></p>
 <blockquote>
 <p>Indigo é uma cor entre o azul e o violeta. É a cor da devoção, sabedoria, justiça e conhecimento. Atrelada à intuição e o que não é visto, é também considerada uma cor espiritual.
 Como muitas cores, indigo recebe o nome de objeto do mundo natural — a planta nomeada indigo utilizada para tingir roupas.</p>

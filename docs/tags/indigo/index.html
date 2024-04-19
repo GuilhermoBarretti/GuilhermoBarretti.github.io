@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us" class="m-auto dark"><head>
+<html lang="en" class="m-auto dark"><head>
   <title>Guilhermo Barretti</title>
 
 <meta name="theme-color" content="#081720" />
@@ -31,7 +31,7 @@
 
 
 
-<link href="/main.min.adf8fb34e41c252a5ac1c990a5e0325759f0d64ca2a3706f75624b523ee31786.css" rel="stylesheet" />
+<link href="/main.min.d3cc24df52242d9a9583773aa03f5a8b76fa2db7773e210def4ab7f714509c37.css" rel="stylesheet" />
 
 
   
@@ -78,37 +78,52 @@
 </head>
 <body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
     
-    <header
-  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 justify-between"
->
-  <div>
-    <a class="no-underline p-2 rounded hover:bg-[#13374d]" href="https://guilhermo.games/">Home</a>    
-    <a class="no-underline p-2 rounded hover:bg-[#13374d]" href="/blog">Blog</a>
-  </div>
-  
-  <i
-    class="fas fa-sun invisible theme-toggle text-blue-500 hover:text-blue-700 dark:text-indigo-300 dark:hover:text-indigo-500 cursor-pointer text-lg mr-9 sm:mr-0"
-    onclick="lightDark(this)"
-  ></i>
+    <header class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 justify-between">
+	<div>
+		<a class="no-underline p-2 rounded hover:bg-[#13374d]" href='/'>Home</a>
+		<a class="no-underline p-2 rounded hover:bg-[#13374d]" href='/blog'>Blog</a>
+	</div>
+	
+	<i class="invisible theme-toggle text-blue-500 hover:text-blue-700"
+		onclick="lightDark(this)"></i>
+
+	<div class="languages">
+		
+		
+			<a class=' selectedLang ' title="en" lang="en" hreflang="en" href="https://guilhermo.games/tags/indigo/"> English</a>
+			 | 
+		
+			<a class='' title="pt-br" lang="pt-br" hreflang="pt-br" href="https://guilhermo.games/pt-br/tags/indigo/"> Português</a>
+			
+		
+	</div>
+
+	
+
+	
+	
+	
+
+	
+
 </header>
 
 <script>
-  const lightDark = (el) => {
-    let html = document.querySelector("html");
-    if (html.classList.contains("dark")) {
-      html.classList.remove("dark");
-      el.classList.add("fa-moon");
-      el.classList.remove("fa-sun");
-      window.localStorage.setItem("theme", "light");
-    } else {
-      html.classList.add("dark");
-      el.classList.add("fa-sun");
-      el.classList.remove("fa-moon");
-      window.localStorage.setItem("theme", "dark");
-    }
-  };
+	const lightDark = (el) => {
+		let html = document.querySelector("html");
+		if (html.classList.contains("dark")) {
+			html.classList.remove("dark");
+			el.classList.add("fa-moon");
+			el.classList.remove("fa-sun");
+			window.localStorage.setItem("theme", "light");
+		} else {
+			html.classList.add("dark");
+			el.classList.add("fa-sun");
+			el.classList.remove("fa-moon");
+			window.localStorage.setItem("theme", "dark");
+		}
+	};
 </script>
-
     
     <main class="grow">
 <div class="blog prose max-w-none">
@@ -140,6 +155,7 @@
 
 
 <!-- # Indigo -->
+<p>[To be translated]</p>
 <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/ys2Y0pNRqJ8" frameborder="0" allowfullscreen></iframe>
 <figcaption>Exemplo de uma fase desafiadora para testar as mecânicas do jogo</figcaption>
 <p>A intenção deste primeiro post é mostrar qual é a ideia do jogo Indigo, qual o estado do desenvolvimento dele, e para onde ele irá.</p>

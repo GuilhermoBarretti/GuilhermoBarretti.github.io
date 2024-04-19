@@ -1,17 +1,31 @@
 baseURL: https://guilhermo.games/
 languageCode: en-us
+DefaultContentLanguage: en
+
 publishDir: ../docs/
 build:
   writeStats: true
+
+languages:
+  en:
+    # baseURL: "/"
+    languageName: English
+    contentDir: content.en
+    weight: 1
+  pt-BR:
+    # baseURL: "br/"
+    languageName: Português
+    contentDir: content.br
+    weight: 2
 
 # Allow html in .md files
 markup:
   goldmark:
     renderer:
       unsafe: true
-# end
 
 params:
+  relativeURLs: true
   title: Guilhermo Barretti
   # author: Darshan Baral
   # description: Website title
@@ -30,7 +44,6 @@ params:
               <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
               <link rel="manifest" href="site.webmanifest">
               <link rel="shortcut icon" href="Icon.ico">
-
   profile:
     name: "Guilhermo Barretti"
     # tagline: Game Developer
@@ -72,98 +85,35 @@ params:
     - item: aboutme
     - item: education
     - item: skill
-    # - item: experience
-    # - item: publication
-    # - item: hobby
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: "Hello, my name is **Guilhermo Barretti** and I'm a **Game Developer**. I have two mobile games released using **Unity** made by myself. I'm also making a **custom engine** using **C++**, **SDL**, **OpenGL** and **Lua**."
-  # experience:
-  #   title: Experiences
-  #   icon: fas fa-briefcase
-  #   list:
-  #     - position: Job Title
-  #       dates: 2019 - *Present*
-  #       company: Company Name
-  #       details: |1-
-  #         - Printed from desktop. Sent [emails](#).
-  #             - Called people *using* telephone.
-  #         - Drank water from office cooler.
-  #         - Ate donuts on people's birthdays.
-  #     - position: Job Title
-  #       dates: 2018 - 2019
-  #       url: "#"
-  #       company: Company Name
+    # description: "aboutMeDesc"
   education:
     title: Education
     icon: fas fa-graduation-cap
     list:
       - degree: Computer Science
         college: Universidade Federal de São Carlos
-        dates: 2012 - 2016 [Incomplete]
-        # thesis_title: "Effect of humans on other humans: a study of human behavior."
-        # thesis_url: "#"
+        dates: dateUfscar
       - degree: Computer Science
         college: Universidade Anhembi Morumbi
-        dates: 2020 - present
-        # thesis_title: "Effect of humans on other humans: a study of human behavior."
-        # thesis_url: "#"
-      # - degree: B.S. in Subject
-      #   college: University of State-City
-      #   dates: 2004 - 2009
-  # publication:
-  #   title: Publications
-  #   icon: fas fa-book
-  #   format:
-  #     - date
-  #     - title
-  #     - authors
-  #     - journal
-  #   types:
-  #     - Journal Articles
-  #     - Proceedings
-  #   list:
-  #     - title: >-
-  #         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  #         eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  #       authors: "F Last, F Second, P secondary"
-  #       date: "2018"
-  #       journal: "Journal of Field 52 (16), 9033-9044"
-  #       url: "#"
-  #       type: Journal Articles
-  #     - title: >-
-  #         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  #         eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  #       authors: "F Last, F Second, P secondary"
-  #       date: "2018"
-  #       journal: "Journal of Field 52 (16), 9033-9044"
-  #       url: "#"
-  #       type: Journal Articles
-  #     - title: >-
-  #         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  #         eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  #       authors: "F Last, F Second, P secondary"
-  #       date: "2018"
-  #       journal: "Journal of Field 52 (16), 9033-9044"
-  #       url: "#"
-  #       type: Proceedings
+        dates: dateUAM
   project:
     title: My Games
     icon: fas fa-gamepad
-    # icon: fas fa-project-diagram
     list:
-      - title: Granola Jumps
+      - title: titleGranolaJumps
         url: "/granolajumps"
-        description: A 2D casual mobile game where you do shell jumps. Available on iOS and Android.
+        description: descGranolaJumps
         imageIcon: GranolaJumps.png
-      - title: "Save The Planets: Meteor Storm"
+      - title: titleSTP
         url: "/savetheplanets"
-        description: An arcade mobile game where you protect the planet from waves of meteors. Available on iOS and Android.
+        description: descSTP
         imageIcon: STP.png
-      - title: Indigo (In development)
+      - title: titleIndigo
         url: "https://guiks.itch.io/indigo"
-        description: A 2D platformer with level editing tools and custom mods using Lua script. Made using C++, SDL, OpenGL, Lua.
+        description: descIndigo
         imageIcon: Indigo.png
   skill:
     title: Skills
@@ -176,10 +126,3 @@ params:
       - skill: OpenGL
       - skill: Lua
       - skill: Javascript
-  hobby:
-    title: Hobbies
-    icon: fas fa-gamepad
-    list:
-      - hobby: Cooking
-      - hobby: Hiking
-      - hobby: Baking
