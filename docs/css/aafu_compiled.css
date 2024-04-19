@@ -1236,10 +1236,8 @@ blockquote:is(.dark *) {
 
 .page-item.active > .page-link {
   pointer-events: none;
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
+  color: rgb(184 184 184 / var(--tw-text-opacity));
 }
 
 .invisible {
@@ -1562,6 +1560,34 @@ blockquote:is(.dark *) {
   .md\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
   }
+}
+
+.page-item {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pagination {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+div#paginator li ul {
+  display: inline;
+}
+
+div#paginator ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px
+}
+
+div#paginator {
+  text-align:center;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 30px;
 }
 
 .separator {

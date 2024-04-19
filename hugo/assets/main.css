@@ -93,11 +93,37 @@ h1 {
     @apply px-2 sm:px-4 py-2 border border-gray-200 flex justify-center items-center text-gray-500 hover:text-gray-800 hover:bg-gray-200;
   }
   .page-item.disabled > .page-link {
-    @apply text-gray-300 bg-white;
+    @apply text-gray-300;
   }
   .page-item.active > .page-link {
-    @apply bg-gray-300 pointer-events-none text-gray-800;
+    @apply pointer-events-none text-[#b8b8b8];
   }
+}
+
+.page-item {
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.pagination {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+div#paginator li ul {
+	display: inline;
+}
+
+div#paginator ul{
+	list-style-type: none; padding: 0px; margin: 0px
+}
+
+div#paginator {
+	text-align:center;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 30px;
 }
 
 .separator {
