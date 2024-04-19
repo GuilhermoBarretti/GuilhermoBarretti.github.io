@@ -22,6 +22,9 @@
 - id: siteIn
   translation: Site in 
 
+- id: latestPosts
+  translation: Últimas Postagens
+
 # Accordion
 
 - id: "About Me"

@@ -1,0 +1,18 @@
+<div class="blog prose max-w-none">
+	{{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+	<div class="blogSummary">
+		<a href="{{ .Permalink | relURL }}">
+			<h2 class="accordion m-0">{{- .Title -}}</h2>
+		</a>
+		<div class="overflow-hidden">
+			<div class="metadata p-2">{{- partial "metadata" . -}}</div>
+		</div>
+	</div>
+	{{ end }}
+</div>
+
+<script src="{{ `js/accordion.js` | relURL }}"></script>
+
+<div class="mt-4 d-flex justify-content-center">
+	{{ template "_internal/pagination.html" . }}
+</div>

@@ -39,7 +39,10 @@
     <script src="{{ `js/accordion.js` | relURL }}"></script>
   </div>
 </div>
-<!-- <div class="">{{ partial "granolajumps" . }}</div> -->
+
+<div class="separator"></div>
+<h3 style="text-align:center; padding-top: 10px; padding-bottom: 10px; font-weight: bolder; color: #70acd1; box-sizing: border-box;"><strong>{{ i18n "latestPosts" }}</strong></h1>
+{{ partial "bloglist" . }}
 
 <span style="display:none;">
 	<a rel="me" href="https://mastodon.gamedev.place/@guilhermo">Mastodon</a>

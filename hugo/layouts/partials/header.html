@@ -8,7 +8,6 @@
 		onclick="lightDark(this)"></i>
 
 	<div class="languages">
-		<!-- {{ $list := ($.AllTranslations) }} -->
 		{{ range $i, $e := $.AllTranslations }}
 			<a class='{{if eq .Lang $.Lang}} selectedLang {{end}}' title="{{ .Lang }}" lang="{{ .Lang }}" hreflang="{{ .Lang }}" href="{{ .Permalink }}"> {{ .Language.LanguageName }}</a>
 			{{ if not $i }} | {{ end }}

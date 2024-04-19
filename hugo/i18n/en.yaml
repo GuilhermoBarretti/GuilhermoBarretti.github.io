@@ -22,6 +22,9 @@
 - id: siteIn
   translation: Site em 
 
+- id: latestPosts
+  translation: Latest Posts
+
 # Accordion
 
 - id: "My Games"
