@@ -2,7 +2,7 @@
 showthedate: false
 ---
 
-<div class="gamePage not-prose" style="width:100%; text-align: center;">
+<div id="gamePage" class="not-prose" style="width:100%; text-align: center;">
 
 <p>Save The Planets: Meteor Storm</p>
 <img src="/images/STP.png" class="center max300 rounded-lg">

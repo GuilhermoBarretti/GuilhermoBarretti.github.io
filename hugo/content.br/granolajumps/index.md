@@ -2,7 +2,7 @@
 showthedate: false
 ---
 
-<div class="gamePage not-prose" style="width:100%; text-align: center;">
+<div id="gamePage" class="not-prose" style="width:100%; text-align: center;">
 
 <p>Granola Jumps</p>
 <img src="/images/GranolaJumps.png" class="center max300 rounded-lg">

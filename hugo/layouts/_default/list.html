@@ -2,7 +2,7 @@
 <div class="blog prose max-w-none">
 	{{ range $key, $val := (.Paginator 10).Pages }}
 	<div class="blogSummary">
-		<a href="{{ .Permalink | relURL }}"></a>
+		<a href="{{ .Permalink | relURL }}">
 			<h2 class="accordion m-0">{{- .Title -}}</h2>
 		</a>
 		<div class="overflow-hidden">

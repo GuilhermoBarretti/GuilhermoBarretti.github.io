@@ -138,10 +138,6 @@ div#paginator {
     box-shadow: inset 1px 1px 2px #000000, inset -1px -1px 2px #194764;
 }
 
-.gamePage {
-	@apply text-5xl mb-5 mt-1 font-black;
-}
-
 .boxShadow {
 	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #0e293a;
 	/* border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #13374d; */
@@ -260,7 +256,15 @@ figcaption {
 	margin-bottom: 20px;
 }
 
-.gamePage img,
+div#gamePage p {
+	@apply text-5xl mb-5 mt-1 font-black;
+}
+
+div#gamePage img {
+	border-radius: 16px;
+}
+
+div#gamePage img,
 .max300 {
 	max-width: 300px;
 	max-height: 300px;
