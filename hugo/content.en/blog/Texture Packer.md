@@ -23,7 +23,7 @@ Hoje vou falar um pouco sobre como funciona o Texture Packer do Indigo. Esta foi
 ## O que é um Texture Packer?
 Basicamente serve para agrupar várias texturas em uma grande imagem. Como meu jogo é em pixel art com tamanhos muito pequenos é possível utilizar apenas uma grande imagem contendo todos as texturas do jogo. 
 
-### Por que juntar tudo em uma grande imagem? 
+## Por que juntar tudo em uma grande imagem? 
 O maior motivo para juntar todas as texturas numa imagem grande é por causa de como a GPU funciona para renderizar elas. Não entrarei em detalhes nesse post pois não é o foco, mas basicamente em vez de carregar várias texturas separadas, agrupá-las em uma única imagem reduz as chamadas de renderização, o que pode melhorar significativamente o desempenho do jogo. Isso ocorre porque cada chamada para renderizar uma textura tem um custo computacional associado, e reduzir o número de chamadas pode resultar em uma execução mais suave do jogo.
 
 ## Qual foi a motivação de fazer esse Texture Packer?

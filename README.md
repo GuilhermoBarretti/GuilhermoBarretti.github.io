@@ -9,8 +9,5 @@ hugo server --disableFastRender --buildDrafts -d ../server/
 
 TODO:
 
-- Code style
-- accordion hover background
-
 Helpful links:
 	https://discourse.gohugo.io/t/i-want-to-get-the-link-to-the-other-language-page-of-the-multilingual-page/44022/7

@@ -52,15 +52,17 @@
   }
 
   body {
-    @apply  text-base bg-darkest text-gray-200;
+    @apply  text-base bg-body text-text;
     /* @apply  text-base bg-stone-50 text-gray-200; background-color: #5b4b87; */
   }
   html {
     touch-action: manipulation;
     scroll-behavior: smooth;
   }
+
+  /* a.rounded, */
   p.rounded {
-	@apply hover:bg-[#13374d];
+	@apply hover:bg-hoverbg;
   }
   p {
     @apply mt-2 mb-2 ;
@@ -130,12 +132,15 @@ div#paginator {
 	margin-bottom: 10px;
     border-radius: 1000px;
 	text-shadow: 1px 1px 0 #000000;
-    box-shadow: inset 1px 1px 2px #000000, inset -1px -1px 2px #194764;
+    box-shadow: inset 1px 1px 2px #000000, inset -1px -1px 2px #878787;
 }
 
 .boxShadow {
-	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #0e293a;
-	/* border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #13374d; */
+	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #878787;
+}
+
+.boxShadowR {
+	border-radius: 8px; box-shadow: 5px 5px 10px #000000;
 }
 
 .boxShadowBR {
@@ -143,11 +148,11 @@ div#paginator {
 }
 
 .profile1 {
-	@apply bg-dark; margin: 0px 10px 15px 10px;
+	@apply bg-profileAccordion; margin: 0px 10px 15px 10px;
 }
 
 .profile2 {
-	@apply col-span-2  bg-darker;
+	@apply col-span-2  bg-profilePhoto;
 }
 
 .profile3 {
@@ -159,9 +164,10 @@ div#paginator {
 }
 
 .blogSummary {	
-	@apply rounded-lg p-6 text-white bg-dark;
-	box-shadow: inset 3px 3px 6px #000000, inset -6px -6px 12px #0e293a;
+	@apply rounded-lg p-6 bg-content; /*text-white*/
+	box-shadow: inset 3px 3px 6px #000000, inset -6px -6px 12px #878787;
 	margin: 0px 10px 20px 10px;
+	font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .center {
@@ -170,13 +176,13 @@ div#paginator {
 	margin-right: auto;
 }
 
-.contentPage ol {
+/* .contentPage ol {
 	@apply text-white;
-}
+} */
 
 .contentPage {
-	@apply rounded-lg p-6 text-white bg-dark;
-	box-shadow: inset 3px 3px 6px #000000, inset -6px -6px 12px #0e293a;
+	@apply rounded-lg p-6 bg-content;
+	box-shadow: inset 3px 3px 6px #000000, inset -6px -6px 12px #878787;
 	margin: 0px 2px 20px 2px;
 	max-width: 100%;
 	padding-left: 4%;
@@ -187,6 +193,7 @@ div#paginator {
 
 .content {
 	font-size: 18px;
+	font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .content img {
@@ -199,11 +206,6 @@ div#paginator {
 	/* max-height: 100%; */
 	max-height: 620px;
 }
-
-/* .content h1, 
-.content h2 {
-	color: #9ad1f3;
-} */
 
 .content h1 {
 	margin-bottom: 0px;
@@ -243,14 +245,20 @@ div#gamePage img,
 	margin-bottom: 30px;
 }
 
+.notSelectedLang {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
 .selectedLang {
+	@apply text-text;
 	pointer-events: none;
 	cursor: default;
 	text-decoration: none;
-	color: #b8b8b8;
 }
 
 .languages {
+	@apply text-text;
 	margin-left: auto; 
 	margin-right: 0;
 }
