@@ -1,4 +1,4 @@
 ---
-title: "Guilhermo Barretti"
+title: "Blog"
 weight: 100
 ---

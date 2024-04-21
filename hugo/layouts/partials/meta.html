@@ -1,4 +1,4 @@
-<title>{{ .Site.Params.title }}</title>
+<title>{{ if .IsHome }}{{ .Site.Params.title }}{{ else }}{{ .LinkTitle }} • {{ .Site.Params.title }}{{ end }}</title>
 
 <meta name="theme-color" content="#7e9fb1" />
 <meta charset="utf-8" />
