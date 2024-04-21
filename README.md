@@ -10,7 +10,6 @@ hugo server --disableFastRender --buildDrafts -d ../server/
 TODO:
 
 - Code style
-- Numbered list text color
 - accordion hover background
 
 Helpful links:

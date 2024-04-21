@@ -16,18 +16,18 @@
       <description>&lt;!-- # Indigo --&gt;&#xD;&#xA;&lt;iframe class=&#34;center&#34; width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ys2Y0pNRqJ8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xD;&#xA;&lt;figcaption&gt;Example of a challenging level to test the game mechanics&lt;/figcaption&gt;&#xD;&#xA;&lt;p&gt;The goal of this first post is to show what the idea of the game Indigo is, its current development state and where it is heading to.&lt;/p&gt;&#xA;&lt;p&gt;Indigo is a 2D platform game with level creation that I am developing using C++, OpenGL and SDL.&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
+      <title>Granola Jumps</title>
       <link>https://guilhermo.games/granolajumps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://guilhermo.games/granolajumps/</guid>
-      <description>Granola Jumps</description>
+      <description>&#xD;</description>
     </item>
     <item>
-      <title></title>
+      <title>Save The Planets: Meteor Storm</title>
       <link>https://guilhermo.games/savetheplanets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://guilhermo.games/savetheplanets/</guid>
-      <description>Save The Planets: Meteor Storm</description>
+      <description>&#xD;</description>
     </item>
   </channel>
 </rss>

@@ -912,11 +912,11 @@ video {
 
 .prose {
   --tw-prose-body: #374151;
-  --tw-prose-headings: #9ad1f3;
+  --tw-prose-headings: #c2d7e3;
   --tw-prose-lead: #4b5563;
   --tw-prose-links: #37b2ff;
   --tw-prose-bold: #111827;
-  --tw-prose-counters: #6b7280;
+  --tw-prose-counters: #ffffff;
   --tw-prose-bullets: #d1d5db;
   --tw-prose-hr: #e5e7eb;
   --tw-prose-quotes: #9ad1f3;
@@ -924,7 +924,7 @@ video {
   --tw-prose-captions: #b8b8b8;
   --tw-prose-kbd: #111827;
   --tw-prose-kbd-shadows: 17 24 39;
-  --tw-prose-code: #00ffff;
+  --tw-prose-code: #111827;
   --tw-prose-pre-code: #e5e7eb;
   --tw-prose-pre-bg: #1f2937;
   --tw-prose-th-borders: #d1d5db;
@@ -1121,10 +1121,7 @@ video {
 
 h2.accordion {
   --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-  color: #70acd1;
-  /* @apply text-blue-600; color: #5d90af; */
-  /* @apply text-blue-600 dark:text-indigo-400; */
+  color: rgb(160 197 219 / var(--tw-text-opacity));
 }
 
 a {
@@ -1181,11 +1178,6 @@ h5 {
   line-height: 1.75rem;
 }
 
-h1 {
-  --tw-text-opacity: 1;
-  color: rgb(112 172 209 / var(--tw-text-opacity));
-}
-
 .prose ul,
   .prose ol {
   pli:hover::marker {
@@ -1202,12 +1194,11 @@ h1 {
 
 body {
   --tw-bg-opacity: 1;
-  background-color: rgb(250 250 249 / var(--tw-bg-opacity));
+  background-color: rgb(8 23 32 / var(--tw-bg-opacity));
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
-  background-color: #081720;
   /* @apply  text-base bg-stone-50 text-gray-200; background-color: #5b4b87; */
 }
 
@@ -1239,7 +1230,7 @@ blockquote {
 
 blockquote:is(.dark *) {
   --tw-bg-opacity: 1;
-  background-color: rgb(18 53 73 / var(--tw-bg-opacity));
+  background-color: rgb(31 80 108 / var(--tw-bg-opacity));
 }
 
 .page-item.active > .page-link {
@@ -1622,54 +1613,33 @@ div#paginator {
 }
 
 .profile1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 80 108 / var(--tw-bg-opacity));
   margin: 0px 10px 15px 10px;
-  /* @apply rounded-none; border-radius: 8px; box-shadow: 5px 5px 10px #2f2b3b, -5px -5px 10px #7562ab; margin: 0px 5px 15px 5px; */
 }
 
 .profile2 {
   grid-column: span 2 / span 2;
   --tw-bg-opacity: 1;
   background-color: rgb(15 44 61 / var(--tw-bg-opacity));
-  /* @apply col-span-2  bg-[#0c2432]; */
-  /* @apply col-span-2; border-radius: 8px; box-shadow: 5px 5px 10px #2f2b3b, -5px -5px 10px #7562ab; */
-  /* @apply col-span-2; border-radius: 8px; box-shadow: inset 3px 3px 6px #4d4073, inset -6px -6px 12px #645395; */
 }
 
 .profile3 {
   padding: 0.5rem;
-  /* @apply bg-gray-300 dark:bg-darker p-2; border-radius: 8px; box-shadow: 5px 5px 10px #4d4073, -5px -5px 10px #645395; */
 }
 
 .profilePhoto {
   border-radius: 8px;
-  /* @apply rounded-full; border-radius: 8px; box-shadow: 5px 5px 10px #4d4073, -5px -5px 10px #645395; */
-}
-
-.contentBox {
-  --tw-bg-opacity: 1;
-  background-color: rgb(18 53 73 / var(--tw-bg-opacity));
-  /* background-color: #123549; */
-}
-
-.blog {
-  /* @apply rounded-lg p-6 text-white;
-	box-shadow: inset 3px 3px 6px #000000, inset -6px -6px 12px #0e293a;
-	background-color: #0f2c3d;
-	margin: 0px 10px 20px 10px; */
 }
 
 .blogSummary {
-  /* border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #0e293a;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 10px;
-	background-color: #123549; */
   border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 80 108 / var(--tw-bg-opacity));
   padding: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   box-shadow: inset 3px 3px 6px #000000, inset -6px -6px 12px #0e293a;
-  background-color: #0f2c3d;
   margin: 0px 10px 20px 10px;
 }
 
@@ -1679,17 +1649,21 @@ div#paginator {
   margin-right: auto;
 }
 
+.contentPage ol {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .contentPage {
   border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 80 108 / var(--tw-bg-opacity));
   padding: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   box-shadow: inset 3px 3px 6px #000000, inset -6px -6px 12px #0e293a;
-  background-color: #123549;
   margin: 0px 2px 20px 2px;
   max-width: 100%;
-  /* padding-left: 20px; */
-  /* padding-right: 20px; */
   padding-left: 4%;
   padding-right: 4%;
   padding-top: 30px;
@@ -1711,10 +1685,10 @@ div#paginator {
   max-height: 620px;
 }
 
-.content h1, 
+/* .content h1, 
 .content h2 {
-  color: #9ad1f3;
-}
+	color: #9ad1f3;
+} */
 
 .content h1 {
   margin-bottom: 0px;

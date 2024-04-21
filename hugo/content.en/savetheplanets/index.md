@@ -1,10 +1,10 @@
 ---
+title: "Save The Planets: Meteor Storm"
 showthedate: false
 ---
 
 <div id="gamePage" class="not-prose" style="width:100%; text-align: center;">
 
-<p>Save The Planets: Meteor Storm</p>
 <img src="/images/STP.png" class="center max300 rounded-lg">
 
 <a href="https://apps.apple.com/app/id6459537872" target="_blank">

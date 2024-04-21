@@ -1,4 +1,4 @@
-<div class="blog prose max-w-none">
+<div class="prose max-w-none">
 	{{ range first 5 (where .Site.RegularPages "Section" "blog") }}
 	<div class="blogSummary">
 		<a href="{{ .Permalink | relURL }}">

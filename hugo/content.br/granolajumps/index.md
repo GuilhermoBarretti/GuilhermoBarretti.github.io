@@ -1,10 +1,10 @@
 ---
+title: "Granola Jumps"
 showthedate: false
 ---
 
 <div id="gamePage" class="not-prose" style="width:100%; text-align: center;">
 
-<p>Granola Jumps</p>
 <img src="/images/GranolaJumps.png" class="center max300 rounded-lg">
 
 <a href="https://apps.apple.com/app/granola-jumps/id6479206004?platform=iphone" target="_blank">
