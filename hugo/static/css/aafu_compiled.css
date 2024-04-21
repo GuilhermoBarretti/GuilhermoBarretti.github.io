@@ -919,7 +919,7 @@ video {
   --tw-prose-counters: #000000;
   --tw-prose-bullets: #d1d5db;
   --tw-prose-hr: #e5e7eb;
-  --tw-prose-quotes: #9ad1f3;
+  --tw-prose-quotes: #000000;
   --tw-prose-quote-borders: #e5e7eb;
   --tw-prose-captions: #595959;
   --tw-prose-kbd: #111827;
@@ -1225,14 +1225,12 @@ summary {
   line-height: 1.25rem;
 }
 
-blockquote {
+.prose blockquote,
+  blockquote {
+  --tw-border-opacity: 1;
+  border-inline-start-color: rgb(89 89 89 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-blockquote:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(122 122 122 / var(--tw-bg-opacity));
+  background-color: rgb(192 192 192 / var(--tw-bg-opacity));
 }
 
 .page-item.active > .page-link {

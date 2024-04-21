@@ -70,8 +70,10 @@
   summary {
     @apply block text-sm;
   }
+
+  .prose blockquote,
   blockquote {
-    @apply bg-gray-100 dark:bg-dark;
+    @apply bg-quote border-s-[#595959];
   }
   .tags,
   .categories {

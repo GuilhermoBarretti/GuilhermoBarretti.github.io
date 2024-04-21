@@ -32,6 +32,7 @@ module.exports = {
 				profilePhoto: '#1f506c',
 				profileAccordion: '#a6a6a6',
 				content: '#d9d9d9',
+				quote: '#c0c0c0',
 				// content: '#a9c4d3',
 
 				// darkest: '#081720',
@@ -63,7 +64,7 @@ module.exports = {
 						},
 						code: { color: theme(`colors.gray.700`) },
 						'--tw-prose-captions': '#595959',
-						'--tw-prose-quotes': '#9ad1f3',
+						'--tw-prose-quotes': '#000000',
 						'--tw-prose-links': '#0068a9',
 						'--tw-prose-headings': '#1f506c',
 						'--tw-prose-body': '#000000',
