@@ -1,13 +1,13 @@
 <header class="nav flex flex-row row py-2 mb-6 w-full justify-between">
 	<div>
-		<a class="no-underline p-2 rounded font-bold" href='{{ relLangURL "" }}'>{{ i18n "Home" }}</a>
-		<a class="no-underline p-2 rounded font-bold" href='{{ relLangURL "blog" }}'>Blog</a>
+		<a class="underline p-2 rounded font-bold" href='{{ relLangURL "" }}'>{{ i18n "Home" }}</a>
+		<a class="underline p-2 rounded font-bold" href='{{ relLangURL "blog" }}'>Blog</a>
 	</div>
 	
 	<i class="invisible theme-toggle text-blue-500 hover:text-blue-700"
 		onclick="lightDark(this)"></i>
 
-	<div class="languages">
+	<div class="languages px-2">
 		{{ range $i, $e := $.AllTranslations }}
 			<a class='{{if eq .Lang $.Lang}} selectedLang {{ else }} notSelectedLang {{end}}' title="{{ .Lang }}" lang="{{ .Lang }}" hreflang="{{ .Lang }}" href="{{ .Permalink }}"> {{ .Language.LanguageName }}</a>
 			{{ if not $i }} | {{ end }}

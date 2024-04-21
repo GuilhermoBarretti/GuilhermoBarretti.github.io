@@ -1326,6 +1326,10 @@ summary {
   margin-top: 1rem !important;
 }
 
+.mt-10 {
+  margin-top: 2.5rem !important;
+}
+
 .block {
   display: block !important;
 }
@@ -1452,12 +1456,25 @@ summary {
   padding-bottom: 1.5rem !important;
 }
 
+.py-10 {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
 .pl-0 {
   padding-left: 0px !important;
 }
 
 .pt-2 {
   padding-top: 0.5rem !important;
+}
+
+.pr-2 {
+  padding-right: 0.5rem !important;
+}
+
+.pt-10 {
+  padding-top: 2.5rem !important;
 }
 
 .text-left {
