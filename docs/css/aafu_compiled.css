@@ -1682,11 +1682,11 @@ div#paginator {
   padding-right: 4%;
   padding-top: 30px;
   padding-bottom: 10px;
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .content {
   font-size: 18px;
-  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .content img {
