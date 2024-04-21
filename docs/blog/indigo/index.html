@@ -31,7 +31,7 @@
 
 
 
-<link href="/main.min.92554af3a85a2a153f215d91af80acc0e156ba65b83d7c84cd46e0e19b9c51a3.css" rel="stylesheet" />
+<link href="/main.min.c0adc7d8279f86bbb36a2417aa25f2d192ded1734411213b442e76677d5743e3.css" rel="stylesheet" />
 
 
   
@@ -149,30 +149,42 @@
 <p>You should use the environment and tools that make you comfortable to develop, and, to me, this was the way that pleased me the most to make this game.</p>
 <p>However, I am not exactly making everything &ldquo;from scratch&rdquo;, hence the quotation marks. I am using some libraries that help a lot and are really good. Next, I am going to go over each one of what I have chosen to use to help and make my engine.</p>
 <h2 id="sdl">SDL</h2>
-<p><img src="https://cdn-images-1.medium.com/max/2000/0*EOcCgyVqaajcBq-G.png"></p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/0*EOcCgyVqaajcBq-G.png" alt=""  
+/></p>
 <p><em>Simple DirectMedia Layer</em> is an open-source library that provides access to keyboard, mouse, audio, controllers and graphics through OpenGL. It has official support for the main platforms, such as Windows, Mac, Linux, Android, iOS and other ones are also supported through the help of the community. Because of that, it was very easy to compile Indigo for Windows, Mac and Android with no hassle. Also, small and big game companies use SDL and <a href="https://www.patreon.com/posts/58563886">even support its development financially</a>. There are other similar libraries like SFML, raylib and Allegro, but I believe SDL is the most widely used and best developed one.</p>
 <p>I have been playing around with it for a while; it is a great library, and I don&rsquo;t see any reason to have to make it from scratch, at least not for what I want, because it has all the basic functionalities for you to start making your engine. Creating a window on Windows might even not be that hard, but doing this and many other functionalities for each platform you want your game to run on is far more demanding, since each platform has its own way of dealing with them. It handles those functions very well (creating windows and managing keyboard/mouse/controller input), its development is very active and it has a lot of relevance in the industry. That is why I have chosen to use this library.</p>
 <h2 id="dear-imgui"><strong>Dear ImGui</strong></h2>
-<p><img alt="Utilizing Dear ImGui in Indigo" src="https://cdn-images-1.medium.com/max/2784/1*FEprVgJZtc8kkk8ii8uwDA.png"></p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2784/1*FEprVgJZtc8kkk8ii8uwDA.png" alt="Utilizing Dear ImGui in Indigo"  
+/></p>
 <figcaption>Utilizing Dear ImGui in Indigo</figcaption>
 <p>Another library that has been helping me a lot is <a href="https://github.com/ocornut/imgui">Dear ImGui</a>, which is a library for rendering GUI (Graphical User Interface) in a very easy way. This helps me create many windows for menus to change all engine, object, gravity and speed settings, measure FPS or anything else that I would like to have easy and visual access to in the game.</p>
 <p>I liked it a lot because it was rather easy to integrate with my code and begin to create the interface the exact way that I wanted.</p>
 <p>All the documentation for this library is in a code with examples for every single functionality of it. Would you like to create a combo box? There is an example in the code using it in a simple and easy way to understand!</p>
 <p>I have spent a good amount of time just playing around with its functionalities, testing what is possible to create with it and <a href="https://github.com/ocornut/imgui/issues/4451">even taking a look at what other people can do with it</a>. I highly recommend it!</p>
 <h2 id="cereal">Cereal</h2>
-<p><img src="https://cdn-images-1.medium.com/max/2000/0*7-t0Vu2c0aQHJi-n.png"></p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/0*7-t0Vu2c0aQHJi-n.png" alt=""  
+/></p>
 <p>The game needs to save all information in files. Information about the engine, level and object settings, among many others. For this, I decided to use <a href="https://uscilab.github.io/cereal/">Cereal</a>, which is a header-only library in C++ for serializing data in many different formats, such as XML, JSON or binary. I like it a lot because it is easy to use and great at saving data. The only thing that I did not like that much was that the compile time for parts of the code that uses Cereal increases quite a bit.</p>
 <p>I was not in the mood to make my own serializer, so I found this library and liked it a lot.</p>
 <h2 id="lua-scripts"><strong>Lua scripts</strong></h2>
-<p><img alt="Example of a Lua script for an object (Shell)" src="https://cdn-images-1.medium.com/max/2000/1*XkdvAJ-a2sUsT-0CM_A7rQ.png"></p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/1*XkdvAJ-a2sUsT-0CM_A7rQ.png" alt="Example of a Lua script for an object (Shell)"  
+/></p>
 <figcaption>Example of a Lua script for an object (Shell)</figcaption>
 <p>Level creation will not be only limited to the official game objects; it will be possible to create custom game objects utilizing Lua scripts. This will make it easier to create mods for the game. With it, it is possible to have control of everything that the object does, how it reacts to collisions, create its own physics (or use the default one), change sprites and animations, instance new objects, etc. There are endless possibilities for creations.</p>
 <p>In a nutshell, Lua is an interpreted programming language developed here in Brazil at PUC-Rio. It is a rather lightweight language and is easy to embed into your code. Its compiled code (what you need to embed in your application) has around 400 KB only! It is a fast language compared to other interpreted ones like Javascript or Python, for example. It is interpreted, that is, the entire code is compiled in execution time and runs in a contained way in its Virtual Machine, bringing more security to the scripts from other people you might run. It is not a coincidence that this is a widely used language for game mods.</p>
 <h2 id="slopes"><strong>Slopes</strong></h2>
-<p><img src="https://cdn-images-1.medium.com/max/2784/1*EGpWNDg8juYHb1n4DmoeVg.png"></p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2784/1*EGpWNDg8juYHb1n4DmoeVg.png" alt=""  
+/></p>
 <p>The latest game implementation was the slopes! There are two intensities of slopes. Looking at the screenshot, the ramp on the left of the character is less intense and, on the right, steeper. In the future, I will write an in-depth post about this implementation!</p>
 <h2 id="what-indigo-is-at-the-moment-and-where-it-is-headingto">What Indigo is at the moment and where it is heading to</h2>
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*i0PIhTPxYgWOvPdKSY3zEQ.png"></p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/1*i0PIhTPxYgWOvPdKSY3zEQ.png" alt=""  
+/></p>
 <blockquote>
 <p>Indigo is a color between blue and violet. It is a color of devotion, wisdom, justice, and knowledge. Tied to intuition and what is not seen, it is also considered spiritual.
 Like many colors, indigo gets its name from an object in the natural world - the plant named indigo once used for dyeing cloth.</p>

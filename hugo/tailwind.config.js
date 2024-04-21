@@ -26,8 +26,8 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            "code::before": false,
-            "code::after": false,
+            // "code::before": false,
+            // "code::after": false,
             // a: {
             //   color: theme(`colors.blue.600`),
             //   textDecoration: "none",
@@ -37,8 +37,8 @@ module.exports = {
             //   },
             // },
             pre: {
-              backgroundColor: theme(`colors.stone.200`),
-              color: theme(`colors.gray.700`),
+              backgroundColor: '#000000',
+            //   color: '#ff0000',
             },
 			blockquote: {
 				fontSize: '19px',
@@ -58,7 +58,7 @@ module.exports = {
             // '--tw-prose-hr': theme('colors.pink[300]'),
             // '--tw-prose-quotes': theme('colors.pink[900]'),
             // '--tw-prose-quote-borders': theme('colors.pink[300]'),
-            // '--tw-prose-code': theme('colors.pink[900]'),
+            '--tw-prose-code': '#00ffff',
             // '--tw-prose-pre-code': theme('colors.pink[100]'),
             // '--tw-prose-pre-bg': theme('colors.pink[900]'),
             // '--tw-prose-th-borders': theme('colors.pink[300]'),
@@ -81,8 +81,8 @@ module.exports = {
             // '--tw-prose-invert-td-borders': theme('colors.pink[700]'),
           },
         },
-        // invert: {
-        //   css: {
+        invert: {
+          css: {
         //     color: theme(`colors.gray.200`),
         //     a: {
         //       color: theme(`colors.yellow.300`),
@@ -97,12 +97,13 @@ module.exports = {
         //     strong: { color: theme(`colors.gray.200`) },
         //     td: { color: theme(`colors.gray.200`) },
         //     blockquote: { color: theme(`colors.gray.200`) },
-        //     pre: {
-        //       backgroundColor: theme(`colors.stone.700`),
-        //     },
-        //     code: { color: theme(`colors.gray.200`) },
-        //   },
-        // },
+            pre: {
+              backgroundColor: '#000000',
+            },
+            code: { color: '#ffffff'
+			},
+          },
+        },
       }),
     },
   },

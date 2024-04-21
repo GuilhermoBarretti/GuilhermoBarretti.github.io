@@ -778,6 +778,14 @@ video {
   font-size: 0.875em;
 }
 
+.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::before {
+  content: "`";
+}
+
+.prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::after {
+  content: "`";
+}
+
 .prose :where(a code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   color: inherit;
 }
@@ -809,8 +817,8 @@ video {
 }
 
 .prose :where(pre):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-  color: #374151;
-  background-color: #e7e5e4;
+  color: var(--tw-prose-pre-code);
+  background-color: #000000;
   overflow-x: auto;
   font-weight: 400;
   font-size: 0.875em;
@@ -916,7 +924,7 @@ video {
   --tw-prose-captions: #b8b8b8;
   --tw-prose-kbd: #111827;
   --tw-prose-kbd-shadows: 17 24 39;
-  --tw-prose-code: #111827;
+  --tw-prose-code: #00ffff;
   --tw-prose-pre-code: #e5e7eb;
   --tw-prose-pre-bg: #1f2937;
   --tw-prose-th-borders: #d1d5db;

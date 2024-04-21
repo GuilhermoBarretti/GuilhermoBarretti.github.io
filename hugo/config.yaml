@@ -20,6 +20,7 @@ languages:
 
 # Allow html in .md files
 markup:
+  defaultMarkdownHandler: goldmark
   goldmark:
     renderer:
       unsafe: true
@@ -114,7 +115,7 @@ params:
       - title: titleIndigo
         url: "https://guiks.itch.io/indigo"
         description: descIndigo
-        imageIcon: Indigo.png
+        imageIcon: Indigo_Icon_Animated.gif
   skill:
     title: Skills
     panelId: skill-panel

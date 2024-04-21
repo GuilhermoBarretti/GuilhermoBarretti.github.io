@@ -1,12 +1,14 @@
 
 npx tailwindcss -i ./assets/main.css -o ./static/css/aafu_compiled.css --watch
 
-hugo server -disableFastRender
+hugo server --disableFastRender --buildDrafts --renderToMemory
 
 -----------------------------------------------------
 
 TODO:
 
+- Code style
+- Numbered list text color
 - accordion hover background
 
 Helpful links:
