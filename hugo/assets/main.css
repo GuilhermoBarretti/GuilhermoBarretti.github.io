@@ -139,8 +139,12 @@ div#paginator {
 	border-radius: 8px; box-shadow: 5px 5px 10px #000000, -5px -5px 10px #878787;
 }
 
-.boxShadowR {
-	border-radius: 8px; box-shadow: 5px 5px 10px #000000;
+.softShadow {
+	box-shadow: 5px 5px 5px #555555;
+}
+
+.textShadow {
+	text-shadow: 2px 2px 2px #888888;
 }
 
 .boxShadowBR {
