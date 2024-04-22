@@ -52,6 +52,11 @@
 		@apply text-lg mb-2 mt-1;
 	}
 
+	.prose hr {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
 	.prose ul,
 	.prose ol {
 		li::marker {
@@ -144,6 +149,21 @@ div#paginator {
 	margin-left: 0;
 	margin-right: 0;
 	padding-bottom: 30px;
+}
+
+
+hr {
+	height: 36px;	
+	padding: 0;
+	border: 0;
+	text-align: center;
+}
+
+hr::before {
+	content: "\2022    \2022    \2022";
+	font-size: 15px;
+	color: #000000;
+	letter-spacing: .6em;
 }
 
 .separator {

@@ -31,8 +31,7 @@ Para criar a pixel art do meu jogo estou utilizando o Aseprite que é um ótimo 
 
 É uma ferramenta que me ajuda muito, mas queria facilitar ainda mais o processo de inserir dentro do jogo o que eu crio nele. Gostaria que ao salvar um arquivo .aseprite contendo uma imagem ou uma animação, ela aparecesse automaticamente dentro do jogo pronto para uso. Sem ter que ficar exportando uma animação/imagem e adicionando isso manualmente para dentro do jogo.
 
-<!-- <hr> -->
-<div class="separator"></div>
+<hr>
 
 ## Como quero que funcione?
 1. Ter uma única pasta contendo todos os arquivos .aseprite. Esses arquivos contém todas as imagens que serão utilizadas no jogo: texturas dos objetos, frames das animações e UI.
@@ -341,7 +340,7 @@ int TexturePacker::ListAsepriteFiles(bool check_new_files)
 
 ## Juntando tudo
 
-<div class="separator"></div>
+<hr>
 
 ## Utilizando
 ![](/images/TextureAtlas.png)
